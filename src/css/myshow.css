@@ -76,12 +76,12 @@ footer {
       width: 0.5rem;
       height: 0.5rem;
       background: #007AFF; }
-  footer .home {
+  footer .home .icon {
+    background: url(../img/7_21.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .active {
     border-top-color: #e4366b;
     margin-top: -0.02rem; }
-    footer .home .icon {
-      background: url(../img/7_21.jpg) no-repeat center;
-      background-size: 100%; }
   footer .type .icon {
     background: url(../img/7_21-09.jpg) no-repeat center;
     background-size: 100%; }
@@ -205,6 +205,10 @@ header .con {
   width: 1.24rem;
   margin-left: -0.62rem; }
 
+header .more {
+  width: 0.8rem;
+  margin-left: -0.4rem; }
+
 section {
   flex-grow: 1;
   background: #f7f7f7;
@@ -235,28 +239,44 @@ section {
         section .my-info .name .btns .register {
           background: url(../img/11myshow_08.jpg) no-repeat;
           background-size: 100%; }
-  section .my-list {
-    height: 3.6rem; }
-    section .my-list ul {
-      width: 5.6rem;
-      margin: 0 auto;
-      font-size: 0.36rem;
-      border: 0.01rem solid #aaa;
-      border-radius: 0.2rem;
-      background: #fff; }
-      section .my-list ul li {
-        border-bottom: 0.01rem solid #aaa;
-        height: 0.88rem;
-        line-height: 0.88rem;
-        padding: 0 0.28rem;
-        position: relative; }
-        section .my-list ul li i {
-          float: right;
-          position: absolute;
-          top: 50%;
-          margin-top: -0.15rem;
-          right: 0.28rem;
-          width: 0.3rem;
-          height: 0.3rem;
-          background: url(../img/8_06.jpg) no-repeat;
-          background-size: 100%; }
+  section .my-list ul {
+    width: 5.6rem;
+    margin: 0 auto;
+    font-size: 0.36rem;
+    border: 0.01rem solid #aaa;
+    border-radius: 0.2rem;
+    background: #fff; }
+    section .my-list ul li {
+      border-bottom: 0.01rem solid #aaa;
+      height: 0.88rem;
+      line-height: 0.88rem;
+      padding: 0 0.28rem;
+      position: relative; }
+      section .my-list ul li i {
+        float: right;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.15rem;
+        right: 0.28rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        background: url(../img/8_06.jpg) no-repeat;
+        background-size: 100%; }
+      section .my-list ul li:last-child {
+        border-bottom: none; }
+  section .my-list .list1 {
+    margin-top: 0.4rem;
+    margin-bottom: 0.26rem; }
+  section .my-list .list2 {
+    margin-bottom: 0.26rem; }
+  section .logout-btn {
+    width: 5.6rem;
+    height: 0.93rem;
+    margin: 0 auto;
+    background: #d7114f url(../img/13regist_18.jpg) repeat-x;
+    border-radius: 0.12rem;
+    text-align: center;
+    line-height: 0.92rem; }
+    section .logout-btn p {
+      font-size: 0.38rem;
+      color: #fff; }

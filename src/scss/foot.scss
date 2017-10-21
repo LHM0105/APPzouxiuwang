@@ -23,13 +23,16 @@ footer{
         }
     }
     .home{
-        border-top-color: #e4366b;
-        margin-top:-0.02rem;
+        
         .icon{
             background: url(../img/7_21.jpg) no-repeat center;
             background-size:100% ;
                 
         }
+    }
+    .active{
+        border-top-color: #e4366b;
+        margin-top:-0.02rem;
     }
     .type{
         .icon{

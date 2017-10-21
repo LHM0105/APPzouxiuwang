@@ -7,6 +7,10 @@ header{
         width: 1.24rem;
         margin-left:-0.62rem;
     }
+    .more{
+        width: 0.8rem;
+        margin-left: -0.4rem;
+    }
 }
 
 section{
@@ -50,7 +54,7 @@ section{
     }
     .my-list{
 //      width: 5.6rem;
-        height: 3.6rem;
+//      height: 3.6rem;
         ul{
             width: 5.6rem;
             margin: 0 auto;
@@ -75,7 +79,38 @@ section{
                     background: url(../img/8_06.jpg) no-repeat;
                     background-size: 100%;
                 }
+                &:last-child{
+                    border-bottom: none;
+                }
             }
         }
+        //24
+        .list1{
+            margin-top: 0.4rem; 
+            margin-bottom: 0.26rem;
+            
+        }
+        .list2{
+            margin-bottom: 0.26rem;
+        }
+        
     }
+    .logout-btn{
+        width: 5.6rem;
+        height: 0.93rem;
+        margin: 0 auto;
+        background:#d7114f url(../img/13regist_18.jpg) repeat-x;
+        border-radius: 0.12rem;
+        text-align: center;
+        line-height: 0.92rem;
+        p{
+            font-size: 0.38rem;
+            color: #fff;
+        }
+            
+    }
+}
+
+footer{
+    
 }

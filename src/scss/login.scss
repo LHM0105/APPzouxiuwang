@@ -110,12 +110,16 @@ section{
                     background-size: 100%;
                     margin:0 0.14rem 0 0.2rem;
                 }
+                .no-check{
+                    background: url(../img/12login_07.jpg) no-repeat 0.2rem 0.2rem;
+                }
                 label{
                     float: left;
                 }
                 input{
                     position: absolute;
-                    left: -0.1rem;
+                    left: 0.6rem;
+                    visibility: hidden;
                 }
                 a{
                     float: left;

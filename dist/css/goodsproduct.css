@@ -76,12 +76,12 @@ footer {
       width: 0.5rem;
       height: 0.5rem;
       background: #007AFF; }
-  footer .home {
+  footer .home .icon {
+    background: url(../img/7_21.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .active {
     border-top-color: #e4366b;
     margin-top: -0.02rem; }
-    footer .home .icon {
-      background: url(../img/7_21.jpg) no-repeat center;
-      background-size: 100%; }
   footer .type .icon {
     background: url(../img/7_21-09.jpg) no-repeat center;
     background-size: 100%; }
@@ -214,7 +214,24 @@ header .share-btn {
 section {
   flex-grow: 1;
   background: #f7f7f7;
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-shrink: 1; }
+  section .swiper-container {
+    width: 100%;
+    height: 9.6rem;
+    border: 1px solid #ccc; }
+  section .detail-con {
+    font-size: 0.24rem; }
+    section .detail-con .pic {
+      width: 100%;
+      overflow: hidden; }
+    section .detail-con > p {
+      padding: 0 0.2rem;
+      margin-bottom: 0.24rem;
+      line-height: 0.38rem; }
   section .warn {
     height: 0.86rem;
     border-top: 1px solid #636363;
@@ -227,6 +244,49 @@ section {
       line-height: 0.86rem;
       font-size: 0.3rem;
       text-align: center; }
+  section .content {
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #282828;
+    flex-grow: 1;
+    overflow: hidden; }
+    section .content .img {
+      width: 4.36rem;
+      height: 3.66rem;
+      border: 0.01rem solid #AAAAAA;
+      margin: 0.28rem auto; }
+    section .content .tit-pic {
+      font-size: 0.38rem;
+      margin: 0.2rem auto;
+      width: 5.5rem;
+      overflow: hidden; }
+      section .content .tit-pic .left {
+        width: 0.57rem;
+        height: 0.82rem;
+        background: url(../img/18jieshao_07.jpg) no-repeat left;
+        background-size: 100%;
+        float: left; }
+      section .content .tit-pic .right {
+        float: left;
+        height: 0.82rem;
+        width: 4.46rem;
+        background: #d7114f url(../img/18jieshao_09.jpg) repeat-x;
+        border-radius: 0 0.1rem 0.1rem 0; }
+        section .content .tit-pic .right p {
+          color: #fff;
+          line-height: 0.82rem; }
+    section .content .bot {
+      width: 4.8rem;
+      margin: 0 auto;
+      padding: 0.1rem;
+      font-size: 0.24rem; }
+      section .content .bot p {
+        color: #484850; }
+        section .content .bot p span {
+          margin: 0 0.15rem; }
+      section .content .bot .bot-l {
+        float: left; }
+      section .content .bot .bot-r {
+        float: right; }
 
 footer .foot-btn {
   width: 2.13rem; }
@@ -236,4 +296,5 @@ footer .foot-btn {
     line-height: 0.9rem; }
 
 footer .active {
-  border-top-color: #e4366b; }
+  border-top-color: #e4366b;
+  margin-top: -0.02rem; }

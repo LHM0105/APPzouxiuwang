@@ -31,7 +31,32 @@
 			<!--轮播图-->
 			<div class="sliderbox">
 				<!--用swiper实现  -->
-				
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide" style="background:yellow ;">
+				        	<!--这里图片的显示比例应该是100%，此处用120%是为了不显示切图的小按钮-->
+				        	<img src="img/main_10.jpg" width="100%" height="100%" />
+				        </div>
+				        <div class="swiper-slide" style="background: greenyellow;">
+				        	<img src="img/main_10.jpg" width="100%" height="100%" />
+				        </div>
+				        <div class="swiper-slide" style="background: orangered;">
+				        	<img src="img/main_10.jpg" width="100%" height="100%" />
+				        </div>
+				        <div class="swiper-slide" style="background: greenyellow;">
+				        	<img src="img/main_10.jpg"  width="100%" height="100%" />
+				        </div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				    
+				     <!-- 如果需要导航按钮 -->
+				    <!--<div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>-->
+				    
+				    <!-- 如果需要滚动条 -->
+				    <!--<div class="swiper-scrollbar"></div>-->s
+				</div>
 			</div>
 			<ul class="goodsList">
 				<li>
@@ -122,7 +147,7 @@
 			</ul>
 		</section>
 		<footer>
-			<div class="foot-btn home">
+			<div class="foot-btn home active">
 				<div class="icon"></div>
 				<p>首页</p>
 			</div>
@@ -143,5 +168,21 @@
 				<p>更多</p>
 			</div>
 		</footer>
+		<script>        
+		  var mySwiper = new Swiper ('.swiper-container', {
+//		    direction: 'vertical',
+//		    loop: true,
+		    
+		    // 如果需要分页器
+		    pagination: '.swiper-pagination',
+//		    paginationClickable :true,//点击小按钮切换
+		    // 如果需要前进后退按钮
+//		    nextButton: '.swiper-button-next',
+//		    prevButton: '.swiper-button-prev',
+		    
+		    // 如果需要滚动条
+//		    scrollbar: '.swiper-scrollbar',
+		  })       
+		</script>
 	</body>
 </html>

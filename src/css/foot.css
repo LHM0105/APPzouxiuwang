@@ -19,12 +19,12 @@ footer {
       width: 0.5rem;
       height: 0.5rem;
       background: #007AFF; }
-  footer .home {
+  footer .home .icon {
+    background: url(../img/7_21.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .active {
     border-top-color: #e4366b;
     margin-top: -0.02rem; }
-    footer .home .icon {
-      background: url(../img/7_21.jpg) no-repeat center;
-      background-size: 100%; }
   footer .type .icon {
     background: url(../img/7_21-09.jpg) no-repeat center;
     background-size: 100%; }

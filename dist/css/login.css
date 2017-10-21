@@ -76,12 +76,12 @@ footer {
       width: 0.5rem;
       height: 0.5rem;
       background: #007AFF; }
-  footer .home {
+  footer .home .icon {
+    background: url(../img/7_21.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .active {
     border-top-color: #e4366b;
     margin-top: -0.02rem; }
-    footer .home .icon {
-      background: url(../img/7_21.jpg) no-repeat center;
-      background-size: 100%; }
   footer .type .icon {
     background: url(../img/7_21-09.jpg) no-repeat center;
     background-size: 100%; }
@@ -262,11 +262,14 @@ section {
         height: 0.34rem;
         background-size: 100%;
         margin: 0 0.14rem 0 0.2rem; }
+      section .login form .check-box .no-check {
+        background: url(../img/12login_07.jpg) no-repeat 0.2rem 0.2rem; }
       section .login form .check-box label {
         float: left; }
       section .login form .check-box input {
         position: absolute;
-        left: -0.1rem; }
+        left: 0.6rem;
+        visibility: hidden; }
       section .login form .check-box a {
         float: left;
         margin-left: 0.45rem;

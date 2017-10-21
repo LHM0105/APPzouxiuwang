@@ -1,1 +1,1 @@
-$(function(){var e=document.documentElement.clientWidth/6.4+"px";document.getElementsByTagName("html")[0].style.fontSize=e});
+$(function(){var e=document.documentElement.clientWidth/6.4+"px";document.getElementsByTagName("html")[0].style.fontSize=e,$("#ismemory").click(function(){console.log($(this).prop("checked")),$(this).prop("checked")?$(this).siblings(".check-icon").removeClass("no-check"):$(this).siblings(".check-icon").addClass("no-check")})});

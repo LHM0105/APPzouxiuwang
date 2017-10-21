@@ -1,0 +1,204 @@
+@import "commons";
+@import "foot";
+@import "head";
+
+header{
+    .con{
+        width: 1.24rem;
+        margin-left:-0.62rem;
+    }
+    //我的订单的样式
+    .myorder-con{
+        width: 1.66rem;
+        margin-left: -0.84rem;  
+    }
+}
+
+section{
+    flex-grow: 1;
+    background: #f7f7f7;
+    flex-shrink: 1;
+    display: flex;
+    .no-goods{
+        padding-top: 0.6rem;
+        flex: none;
+//      width: 2.62rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        .pic{
+            font-size: 0.36rem;
+            margin-bottom: 0.7rem;
+            .img{
+                width: 2.62rem;
+                height: 2.62rem;
+                background: url(../img/10shopcartempty_07.jpg) no-repeat center;
+                background-size: 100%;
+                margin-top: 0.24rem;
+            }
+        }
+        .btn-go{
+            background: url(../img/10shopcartempty_13.jpg) repeat-x;
+            width: 4.24rem;
+            font-size: 0.44rem;
+            color: #fff;
+            text-align: center;
+            border-radius: 0.1rem;
+        }
+    }
+    .have{
+        //      display:none;
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        .total-box{
+            flex-grow: 0;
+            flex-shrink: 0;
+            background: #333333;
+            height: 0.86rem;
+            border-top: 1px solid #636363;
+            border-bottom: 1px solid #282828;
+            padding: 0 0.25rem 0 0.2rem;
+            p{
+                color: #fff;
+                font-size: 0.3rem;
+                float: left;
+                line-height: 0.86rem;
+                height: 0.86rem;
+            }
+            .yf{
+                float: right;
+                b{
+                    color: #e73569;
+                }
+            }
+        }
+        .goods-box{
+            border-top: 0.01rem solid #636363;
+            border-bottom: 0.01rem solid #cbcbcb;
+            overflow: auto;
+            li{
+                height: 2.3rem;
+                padding: 0 0.25rem 0 0.32rem;
+                background: #fff;
+                border-bottom:0.01rem solid #aaaaaa;
+                font-size: 0.3rem;
+                position: relative;
+                .img{
+                    float: left;
+                    width: 1.72rem;
+                    height: 1.72rem;
+                    border: 0.01rem solid #bababa;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -(1.72rem/2);
+                }
+                .text{
+                    width: 3.83rem;
+                    height: 1.72rem;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -(1.72rem/2);
+                    right: 0.25rem;
+                    .title-box{
+                        .title{
+                            line-height: 0.38rem;
+                            width: 3.4rem;
+                            float: left;
+                        }
+                        b{
+                            background: url(../img/17shoucang_06.jpg) no-repeat;
+                            background-size:100% ;
+                            width: 0.28rem;
+                            height: 0.32rem;
+                            float: right;
+                            margin-top: 0.06rem;
+                        }
+                        >span{
+                            float: right;
+                        }
+                    }
+                    .info{
+                        height: 0.46rem;
+                        p{
+                            float: left;
+                            span{
+                                color: #e6356b;
+                            }
+                        }
+                        >span{
+                            float: right;
+                        }
+                    }
+                    .num{
+                        height: 0.46rem;
+                        span{
+                            float: left;
+                            width: 1rem;
+                        }
+                        //我的订单的数量
+                        .order-num{
+                            width:2.3rem ;
+                        }
+                        //我的收藏
+                        .sc-old-price{
+                            font-size: 0.24rem;
+                            >i{
+                                color: #aaa;
+                                text-decoration: line-through;
+                                font-style: normal;
+                                text-indent: 0.25rem;
+                            }
+                        }
+                        //取消订单
+                        .order-cancel-btn{
+                            float: right;
+                            width: 1.4rem;
+                            height: 0.56rem;
+                            line-height: 0.56rem;
+                            text-align: center;
+                            background: url(../img/14dingdan_10.jpg) repeat-x;
+                            color: #fff;
+                            font-style: normal;
+                            border-radius: 0.1rem;
+                        }
+                        .icon{
+                            width: 1.2rem;
+                            height: 0.52rem;
+                            background: url(../../dist/img/7_16.jpg) no-repeat center;
+                            background-size: 100%;
+                        }
+                        .chang-num{
+                            float: left;
+                            width: 2.2rem;
+                            height: 0.43rem;
+                            b{
+                                float: left;
+                                width:0.57rem ;
+                                height: 0.42rem;
+                                border-radius: 0.04rem;
+                                background: url(../img/9_04.jpg) repeat-x;
+                                text-align: center;
+                                line-height: 0.42rem;
+                                color: #fff;
+                            }
+                            
+                            input{
+                                float: left;
+                                width: 0.74rem;
+                                height: 0.42rem;
+                                border:0.01rem solid #aaa;
+                                border-radius: 0.04rem;
+                                margin: 0 0.14rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

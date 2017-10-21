@@ -1,0 +1,106 @@
+@charset "UTF-8";
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  /*字体*/ }
+
+li {
+  list-style: none; }
+
+input, img {
+  border: none; }
+
+header {
+  flex-shrink: 0;
+  background: #e4366b;
+  height: 0.86rem;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #282828;
+  position: relative; }
+  header .back {
+    width: 0.54rem;
+    height: 0.36rem;
+    float: left;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.18rem;
+    background: url(../img/xiangqing_06.jpg) no-repeat center;
+    background-size: 100%;
+    margin-left: 0.2rem; }
+  header .btn-box {
+    width: 1.09rem;
+    height: 0.57rem;
+    float: right;
+    margin-right: 0.14rem;
+    background: url(../img/12_03.jpg) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.285rem;
+    right: 0.18rem; }
+  header .con {
+    height: 0.86rem;
+    width: 2.45rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.225rem; }
+    header .con .img {
+      width: 0.99rem;
+      height: 0.31rem;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.13rem;
+      float: left; }
+      header .con .img img {
+        display: block; }
+    header .con h4 {
+      float: right;
+      font-size: 0.4rem;
+      line-height: 0.86rem;
+      color: #fff; }

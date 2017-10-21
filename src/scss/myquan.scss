@@ -1,0 +1,59 @@
+@import "commons";
+@import "foot";
+@import "head";
+
+header{
+    .con{
+        width: 2.1rem;
+        margin-left:-1.05rem;
+    }
+}
+
+section{
+    flex-grow: 1;
+    background: #f7f7f7;
+    flex-shrink: 1;
+    display: flex;
+    padding-top: 0.3rem;
+    .quan-box{
+        width: 5.22rem;
+        margin: 0 auto;
+        ul{
+            width: 5.20rem;
+            height: 0.64rem;
+            font-size: 0.3rem;
+            display: flex;
+            justify-content: space-between;
+            background: url(../img/15youhuiquan_05.jpg) repeat-x;
+            border-radius: 0.04rem;
+            border: 0.01rem solid #aaa;
+            li{
+                flex-grow: 1;
+                text-align: center;               
+                line-height: 0.66rem;
+                border-left: 0.01rem solid #c3c3c3;
+                border-right: 0.01rem solid #a9a9a9;
+            }
+            .active{
+                background: url(../img/15youhuiquan_03.jpg) repeat-x;
+                color: #fff;
+            }
+        }
+        
+        .con{
+            border: 0.01rem solid #aaa;
+            font-size: 0.24rem;
+            margin-top: 0.28rem;
+            background: #fff;
+            border-radius: 0.14rem;
+            padding: 0.14rem;
+            p{
+                line-height: 0.38rem;
+                span{
+                    color: #898989;
+                }
+            }
+            
+        }
+    }
+}

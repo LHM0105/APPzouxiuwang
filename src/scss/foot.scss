@@ -1,0 +1,59 @@
+footer{
+    flex-shrink: 0;
+    height: 0.96rem;
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #282828;   
+    display: flex;
+    justify-content:space-around;
+    background: #484850;
+    .foot-btn{
+        font-size: 0.26rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 0.05rem solid #484850;
+        padding-top:3px ;
+        width: 1.28rem;
+        .icon{
+            width: 0.5rem;
+            height: 0.5rem;
+            background: #007AFF;
+           
+        }
+    }
+    .home{
+        border-top-color: #e4366b;
+        margin-top:-0.02rem;
+        .icon{
+            background: url(../img/7_21.jpg) no-repeat center;
+            background-size:100% ;
+                
+        }
+    }
+    .type{
+        .icon{
+            background: url(../img/7_21-09.jpg) no-repeat center;
+            background-size:100% ; 
+        }
+    }
+    .mine{
+        .icon{
+            background: url(../img/7_21-07.jpg) no-repeat center;
+            background-size:100% ;
+        }
+            
+    }
+    .more{
+        .icon{
+            background: url(../img/7_29.jpg) no-repeat center;
+            background-size:100% ;
+        }
+    }
+    .cart{
+        .icon{
+            background: url(../img/7_21-10.jpg) no-repeat center;
+            background-size:100% ;
+        }
+    }
+}

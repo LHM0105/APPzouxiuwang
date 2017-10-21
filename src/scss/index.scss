@@ -1,12 +1,115 @@
 @import "commons";
-header{
-    background: $maincolor;
+@import "foot";
+@import "head";
+
+
+.search{
+    flex-shrink: 0;
     height: 0.86rem;
-    
-    .con{
-        height: 100%;
-        h4{
-            font-size: (40rem/100);
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #282828;
+    background: #52525a;
+    position: relative;
+    .sec{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 5.92rem;
+        height: 0.57rem;
+        background: #fff;
+        border-radius: 0.28rem;
+            
+        .sec-icon{
+            width: 0.36rem;
+            height: 0.39rem;
+            float: left;
+            margin: 0.12rem 0 0 0.27rem;
+            background: url(../img/7_07.jpg) no-repeat center;
+            background-size: 100%;
+        }
+        input{
+            float: left;
+            margin-left:0.1rem ;
+            height: 0.57rem;
+            border: 0;
+            outline: none;
+            font-size: 0.22rem;
+        }
+    }  
+}
+
+section{
+    overflow: auto;
+    flex-shrink:1;
+    flex-grow: 1;
+    .sliderbox{
+        height: 2.5rem;
+        border-top: 1px solid #636363;
+        border-bottom: 1px solid #282828;
+        .swiper-container{
+            height: 2.5rem;
+        }
+    }
+    .goodsList{
+        font-size: 0.16rem;
+        li{
+            height: 2.19rem;
+            padding: 0.2rem 0 0 0.15rem;
+            border-top: 1px solid #636363;
+            border-bottom: 1px solid #282828;
+            .goodsImg{
+                width: 1.72rem;
+                height: 1.72rem;
+                border-top: 1px solid #636363;
+                border-bottom: 1px solid #282828;
+                float: left;
+            }
+            .goodsText{
+                width: 3.82rem;
+                float: left;
+                margin-left: 0.16rem;
+                h5{
+                    a{
+                        font-size: 0.28rem;
+                        line-height: 0.4rem;
+                    }
+                }
+                .goodsBot{
+                    overflow: hidden;
+                    .goodsPrice{
+                        float: left;
+                        .price{
+                            line-height: 0.45rem;
+                            span{
+                                color: #f32972;
+                                font-size: 0.28rem;
+                            }
+                            i{
+                                font-size: 0.2rem;
+                                color: #bcbabb;
+                                text-decoration: line-through;
+                                
+                            }
+                        }
+                        .zhe{
+                            line-height: 0.4rem;
+                            font-size: 0.24rem;
+                        }
+                    }
+                    .addCart{
+                        float: right;
+                        width: 1.19rem;
+                        height: 0.52rem;
+                        margin-top: 0.22rem;
+                    }
+                }
+            }
         }
     }
 }
+
+
+

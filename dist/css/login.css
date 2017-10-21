@@ -201,87 +201,87 @@ header {
       line-height: 0.86rem;
       color: #fff; }
 
-.search {
-  flex-shrink: 0;
-  height: 0.86rem;
-  border-top: 1px solid #636363;
-  border-bottom: 1px solid #282828;
-  background: #52525a;
-  position: relative; }
-  .search .sec {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 5.92rem;
-    height: 0.57rem;
-    background: #fff;
-    border-radius: 0.28rem; }
-    .search .sec .sec-icon {
-      width: 0.36rem;
-      height: 0.39rem;
-      float: left;
-      margin: 0.12rem 0 0 0.27rem;
-      background: url(../img/7_07.jpg) no-repeat center;
-      background-size: 100%; }
-    .search .sec input {
-      float: left;
-      margin-left: 0.1rem;
-      height: 0.57rem;
-      border: 0;
-      outline: none;
-      font-size: 0.22rem; }
+header .con {
+  width: 0.86rem;
+  margin-left: -0.43rem; }
+
+header .login-btn {
+  background: url(../img/13regist_03.jpg) no-repeat center;
+  background-size: 100%; }
+
+header .login-btn {
+  background: url(../img/13regist_03.jpg) no-repeat center;
+  background-size: 100%; }
 
 section {
-  overflow: auto;
-  flex-shrink: 1;
-  flex-grow: 1; }
-  section .sliderbox {
-    height: 2.5rem;
-    border-top: 1px solid #636363;
-    border-bottom: 1px solid #282828; }
-    section .sliderbox .swiper-container {
-      height: 2.5rem; }
-  section .goodsList {
-    font-size: 0.16rem; }
-    section .goodsList li {
-      height: 2.19rem;
-      padding: 0.2rem 0 0 0.15rem;
-      border-top: 1px solid #636363;
-      border-bottom: 1px solid #282828; }
-      section .goodsList li .goodsImg {
-        width: 1.72rem;
-        height: 1.72rem;
-        border-top: 1px solid #636363;
-        border-bottom: 1px solid #282828;
-        float: left; }
-      section .goodsList li .goodsText {
-        width: 3.82rem;
+  flex-grow: 1;
+  background: #f7f7f7; }
+  section .login {
+    padding: 0.6rem 0.4rem; }
+    section .login form .ipt-box {
+      width: 5.6rem;
+      height: 0.8rem;
+      margin-bottom: 0.54rem; }
+      section .login form .ipt-box .ipt-bg-l {
+        width: 0.17rem;
+        height: 0.8rem;
         float: left;
-        margin-left: 0.16rem; }
-        section .goodsList li .goodsText h5 a {
-          font-size: 0.28rem;
-          line-height: 0.4rem; }
-        section .goodsList li .goodsText .goodsBot {
-          overflow: hidden; }
-          section .goodsList li .goodsText .goodsBot .goodsPrice {
-            float: left; }
-            section .goodsList li .goodsText .goodsBot .goodsPrice .price {
-              line-height: 0.45rem; }
-              section .goodsList li .goodsText .goodsBot .goodsPrice .price span {
-                color: #f32972;
-                font-size: 0.28rem; }
-              section .goodsList li .goodsText .goodsBot .goodsPrice .price i {
-                font-size: 0.2rem;
-                color: #bcbabb;
-                text-decoration: line-through; }
-            section .goodsList li .goodsText .goodsBot .goodsPrice .zhe {
-              line-height: 0.4rem;
-              font-size: 0.24rem; }
-          section .goodsList li .goodsText .goodsBot .addCart {
-            float: right;
-            width: 1.19rem;
-            height: 0.52rem;
-            margin-top: 0.22rem; }
+        background: #F7F7F7 url(../img/13regist_07.jpg) no-repeat left top;
+        background-size: 100%; }
+      section .login form .ipt-box .ipt {
+        float: left;
+        height: 0.76rem;
+        width: 5.23rem;
+        border-top: 0.01rem solid #aaa;
+        background: #fff; }
+        section .login form .ipt-box .ipt input {
+          display: block;
+          height: 100%;
+          width: 100%;
+          background: none; }
+      section .login form .ipt-box .ipt-bg-r {
+        float: right;
+        height: 0.8rem;
+        width: 0.2rem;
+        background: url(../img/13regist_11.jpg) no-repeat left top;
+        background-size: 100%; }
+    section .login form .pwd-ipt {
+      margin-bottom: 0.36rem; }
+    section .login form .r-pwd-ipt {
+      margin-bottom: 0.46rem; }
+    section .login form input::-webkit-input-placeholder {
+      font-size: 0.36rem; }
+    section .login form .check-box {
+      height: 0.4rem;
+      font-size: 0.24rem;
+      overflow: hidden; }
+      section .login form .check-box .check-icon {
+        float: left;
+        background: url(../img/12login_07.jpg) no-repeat center;
+        width: 0.33rem;
+        height: 0.34rem;
+        background-size: 100%;
+        margin: 0 0.14rem 0 0.2rem; }
+      section .login form .check-box label {
+        float: left; }
+      section .login form .check-box input {
+        position: absolute;
+        left: -0.1rem; }
+      section .login form .check-box a {
+        float: left;
+        margin-left: 0.45rem;
+        text-decoration: underline;
+        font-size: 0.24rem;
+        color: #aaa; }
+    section .login form .login-btn {
+      width: 5.6rem;
+      height: 0.92rem;
+      margin: 0.4rem auto;
+      background: url(../img/12btn.jpg) no-repeat center;
+      background-size: 100%; }
+    section .login form .register-btn {
+      width: 5.6rem;
+      height: 0.92rem;
+      margin: 0.7rem auto;
+      background: url(../img/register-btn.jpg) no-repeat center;
+      background-size: 100%; }

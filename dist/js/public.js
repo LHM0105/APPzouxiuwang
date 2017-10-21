@@ -1,0 +1,1 @@
+$(function(){var e=document.documentElement.clientWidth/6.4+"px";document.getElementsByTagName("html")[0].style.fontSize=e});

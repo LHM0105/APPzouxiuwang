@@ -1,0 +1,144 @@
+@import "commons";
+@import "foot";
+@import "head";
+//登录、注册页面公用这一个样式文件
+header{
+    //更改中间文字位置
+    .con{
+        width: 0.86rem;
+        margin-left: -0.43rem;
+    }
+    //注册按钮是head.scss中设置的，不用更改
+    
+    //登录按钮
+    .login-btn{
+        background: url(../img/13regist_03.jpg) no-repeat center;
+        background-size: 100%;
+    }
+//  //回退按钮
+//  .back{
+//      width: 0.54rem;
+//      height: 0.36rem;
+//      float: left;
+//      position: absolute;
+//      top: 50%;
+//      margin-top: -0.18rem;
+//      background: url(../img/xiangqing_06.jpg) no-repeat center;
+//      background-size: 100%;
+//      margin-left: 0.2rem;
+//  }
+//  //注册按钮
+//  .btn-box{
+//      width: 1.09rem;
+//      height: 0.57rem;
+//      float: right;
+//      margin-right: 0.14rem;
+//      background: url(../img/12_03.jpg) no-repeat center;
+//      background-size: 100%;
+//      position: absolute;
+//      top: 50%;
+//      margin-top: -0.285rem;
+//      right: 0.18rem;
+//  }
+    //登录按钮
+    .login-btn{
+        background: url(../img/13regist_03.jpg) no-repeat center;
+        background-size: 100%;
+    }
+    
+}
+//登录和注册的样式写到了同一个文件 
+section{
+    flex-grow: 1;
+    background: #f7f7f7;
+    .login{
+        padding: 0.6rem 0.4rem;
+        form{
+            .ipt-box{
+                width: 5.6rem;
+                height: 0.8rem;
+                margin-bottom: 0.54rem;
+                .ipt-bg-l{
+                    width: 0.17rem;
+                    height: 0.8rem;
+                    float: left;
+                    background: #F7F7F7 url(../img/13regist_07.jpg) no-repeat left top;
+                    background-size: 100%;
+                }
+                .ipt{
+                    float: left;
+                    height: 0.76rem;
+                    width: 5.23rem;
+//                  background: url(../img/13regist_09.jpg) repeat-x;
+                    border-top: 0.01rem solid #aaa;
+                    background: #fff;
+                    input{
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        background: none;
+                    }
+                }
+                .ipt-bg-r{
+                    float: right;
+                    height: 0.8rem;
+                    width: 0.2rem;
+                    background: url(../img/13regist_11.jpg) no-repeat left top;
+                    background-size: 100%;
+                }
+            }
+            .pwd-ipt{
+                margin-bottom: 0.36rem;
+            }
+            .r-pwd-ipt{
+                margin-bottom: 0.46rem;
+            }
+            //改变placeholder样式
+            input::-webkit-input-placeholder{
+                font-size:0.36rem;
+            }
+            
+            .check-box{
+                height: 0.4rem;
+                font-size: 0.24rem;
+                overflow: hidden;
+                .check-icon{
+                    float: left;
+                    background: url(../img/12login_07.jpg) no-repeat center;
+                    width: 0.33rem;
+                    height: 0.34rem;
+                    background-size: 100%;
+                    margin:0 0.14rem 0 0.2rem;
+                }
+                label{
+                    float: left;
+                }
+                input{
+                    position: absolute;
+                    left: -0.1rem;
+                }
+                a{
+                    float: left;
+                    margin-left: 0.45rem;
+                    text-decoration: underline;
+                    font-size: 0.24rem;
+                    color: #aaa;
+                }
+            }
+            .login-btn{
+                width: 5.6rem;
+                height: 0.92rem;
+                margin: 0.4rem auto;
+                background: url(../img/12btn.jpg) no-repeat center;
+                background-size: 100%;
+            }
+            .register-btn{
+                width: 5.6rem;
+                height: 0.92rem;
+                margin: 0.7rem auto;
+                background: url(../img/register-btn.jpg) no-repeat center;
+                background-size: 100%;
+            }
+        }
+    }
+}

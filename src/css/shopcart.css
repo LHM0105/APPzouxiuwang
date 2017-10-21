@@ -1,0 +1,360 @@
+@charset "UTF-8";
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  /*字体*/ }
+
+li {
+  list-style: none; }
+
+input, img {
+  border: none; }
+
+footer {
+  flex-shrink: 0;
+  height: 0.96rem;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #282828;
+  display: flex;
+  justify-content: space-around;
+  background: #484850; }
+  footer .foot-btn {
+    font-size: 0.26rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.05rem solid #484850;
+    padding-top: 3px;
+    width: 1.28rem; }
+    footer .foot-btn .icon {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: #007AFF; }
+  footer .home {
+    border-top-color: #e4366b;
+    margin-top: -0.02rem; }
+    footer .home .icon {
+      background: url(../img/7_21.jpg) no-repeat center;
+      background-size: 100%; }
+  footer .type .icon {
+    background: url(../img/7_21-09.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .mine .icon {
+    background: url(../img/7_21-07.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .more .icon {
+    background: url(../img/7_29.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .cart .icon {
+    background: url(../img/7_21-10.jpg) no-repeat center;
+    background-size: 100%; }
+
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  /*字体*/ }
+
+li {
+  list-style: none; }
+
+input, img {
+  border: none; }
+
+header {
+  flex-shrink: 0;
+  background: #e4366b;
+  height: 0.86rem;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #282828;
+  position: relative; }
+  header .back {
+    width: 0.54rem;
+    height: 0.36rem;
+    float: left;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.18rem;
+    background: url(../img/xiangqing_06.jpg) no-repeat center;
+    background-size: 100%;
+    margin-left: 0.2rem; }
+  header .btn-box {
+    width: 1.09rem;
+    height: 0.57rem;
+    float: right;
+    margin-right: 0.14rem;
+    background: url(../img/12_03.jpg) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.285rem;
+    right: 0.18rem; }
+  header .con {
+    height: 0.86rem;
+    width: 2.45rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.225rem; }
+    header .con .img {
+      width: 0.99rem;
+      height: 0.31rem;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.13rem;
+      float: left; }
+      header .con .img img {
+        display: block; }
+    header .con h4 {
+      float: right;
+      font-size: 0.4rem;
+      line-height: 0.86rem;
+      color: #fff; }
+
+header .con {
+  width: 1.24rem;
+  margin-left: -0.62rem; }
+
+header .myorder-con {
+  width: 1.66rem;
+  margin-left: -0.84rem; }
+
+section {
+  flex-grow: 1;
+  background: #f7f7f7;
+  flex-shrink: 1;
+  display: flex; }
+  section .no-goods {
+    padding-top: 0.6rem;
+    flex: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none; }
+    section .no-goods .pic {
+      font-size: 0.36rem;
+      margin-bottom: 0.7rem; }
+      section .no-goods .pic .img {
+        width: 2.62rem;
+        height: 2.62rem;
+        background: url(../img/10shopcartempty_07.jpg) no-repeat center;
+        background-size: 100%;
+        margin-top: 0.24rem; }
+    section .no-goods .btn-go {
+      background: url(../img/10shopcartempty_13.jpg) repeat-x;
+      width: 4.24rem;
+      font-size: 0.44rem;
+      color: #fff;
+      text-align: center;
+      border-radius: 0.1rem; }
+  section .have {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column; }
+    section .have .total-box {
+      flex-grow: 0;
+      flex-shrink: 0;
+      background: #333333;
+      height: 0.86rem;
+      border-top: 1px solid #636363;
+      border-bottom: 1px solid #282828;
+      padding: 0 0.25rem 0 0.2rem; }
+      section .have .total-box p {
+        color: #fff;
+        font-size: 0.3rem;
+        float: left;
+        line-height: 0.86rem;
+        height: 0.86rem; }
+      section .have .total-box .yf {
+        float: right; }
+        section .have .total-box .yf b {
+          color: #e73569; }
+    section .have .goods-box {
+      border-top: 0.01rem solid #636363;
+      border-bottom: 0.01rem solid #cbcbcb;
+      overflow: auto; }
+      section .have .goods-box li {
+        height: 2.3rem;
+        padding: 0 0.25rem 0 0.32rem;
+        background: #fff;
+        border-bottom: 0.01rem solid #aaaaaa;
+        font-size: 0.3rem;
+        position: relative; }
+        section .have .goods-box li .img {
+          float: left;
+          width: 1.72rem;
+          height: 1.72rem;
+          border: 0.01rem solid #bababa;
+          position: absolute;
+          top: 50%;
+          margin-top: -0.86rem; }
+        section .have .goods-box li .text {
+          width: 3.83rem;
+          height: 1.72rem;
+          position: absolute;
+          top: 50%;
+          margin-top: -0.86rem;
+          right: 0.25rem; }
+          section .have .goods-box li .text .title-box .title {
+            line-height: 0.38rem;
+            width: 3.4rem;
+            float: left; }
+          section .have .goods-box li .text .title-box b {
+            background: url(../img/17shoucang_06.jpg) no-repeat;
+            background-size: 100%;
+            width: 0.28rem;
+            height: 0.32rem;
+            float: right;
+            margin-top: 0.06rem; }
+          section .have .goods-box li .text .title-box > span {
+            float: right; }
+          section .have .goods-box li .text .info {
+            height: 0.46rem; }
+            section .have .goods-box li .text .info p {
+              float: left; }
+              section .have .goods-box li .text .info p span {
+                color: #e6356b; }
+            section .have .goods-box li .text .info > span {
+              float: right; }
+          section .have .goods-box li .text .num {
+            height: 0.46rem; }
+            section .have .goods-box li .text .num span {
+              float: left;
+              width: 1rem; }
+            section .have .goods-box li .text .num .order-num {
+              width: 2.3rem; }
+            section .have .goods-box li .text .num .sc-old-price {
+              font-size: 0.24rem; }
+              section .have .goods-box li .text .num .sc-old-price > i {
+                color: #aaa;
+                text-decoration: line-through;
+                font-style: normal;
+                text-indent: 0.25rem; }
+            section .have .goods-box li .text .num .order-cancel-btn {
+              float: right;
+              width: 1.4rem;
+              height: 0.56rem;
+              line-height: 0.56rem;
+              text-align: center;
+              background: url(../img/14dingdan_10.jpg) repeat-x;
+              color: #fff;
+              font-style: normal;
+              border-radius: 0.1rem; }
+            section .have .goods-box li .text .num .icon {
+              width: 1.2rem;
+              height: 0.52rem;
+              background: url(../../dist/img/7_16.jpg) no-repeat center;
+              background-size: 100%; }
+            section .have .goods-box li .text .num .chang-num {
+              float: left;
+              width: 2.2rem;
+              height: 0.43rem; }
+              section .have .goods-box li .text .num .chang-num b {
+                float: left;
+                width: 0.57rem;
+                height: 0.42rem;
+                border-radius: 0.04rem;
+                background: url(../img/9_04.jpg) repeat-x;
+                text-align: center;
+                line-height: 0.42rem;
+                color: #fff; }
+              section .have .goods-box li .text .num .chang-num input {
+                float: left;
+                width: 0.74rem;
+                height: 0.42rem;
+                border: 0.01rem solid #aaa;
+                border-radius: 0.04rem;
+                margin: 0 0.14rem;
+                text-align: center; }

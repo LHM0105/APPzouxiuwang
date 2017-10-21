@@ -8,6 +8,109 @@ fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0; }
 
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  /*字体*/ }
+
+li {
+  list-style: none; }
+
+input, img {
+  border: none; }
+
+footer {
+  flex-shrink: 0;
+  height: 0.96rem;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #282828;
+  display: flex;
+  justify-content: space-around;
+  background: #484850; }
+  footer .foot-btn {
+    font-size: 0.26rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.05rem solid #484850;
+    padding-top: 3px;
+    width: 1.28rem; }
+    footer .foot-btn .icon {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: #007AFF; }
+  footer .home {
+    border-top-color: #e4366b;
+    margin-top: -0.02rem; }
+    footer .home .icon {
+      background: url(../img/7_21.jpg) no-repeat center;
+      background-size: 100%; }
+  footer .type .icon {
+    background: url(../img/7_21-09.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .mine .icon {
+    background: url(../img/7_21-07.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .more .icon {
+    background: url(../img/7_29.jpg) no-repeat center;
+    background-size: 100%; }
+  footer .cart .icon {
+    background: url(../img/7_21-10.jpg) no-repeat center;
+    background-size: 100%; }
+
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -49,9 +152,136 @@ input, img {
   border: none; }
 
 header {
+  flex-shrink: 0;
   background: #e4366b;
-  height: 0.86rem; }
+  height: 0.86rem;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #282828;
+  position: relative; }
+  header .back {
+    width: 0.54rem;
+    height: 0.36rem;
+    float: left;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.18rem;
+    background: url(../img/xiangqing_06.jpg) no-repeat center;
+    background-size: 100%;
+    margin-left: 0.2rem; }
+  header .btn-box {
+    width: 1.09rem;
+    height: 0.57rem;
+    float: right;
+    margin-right: 0.14rem;
+    background: url(../img/12_03.jpg) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.285rem;
+    right: 0.18rem; }
   header .con {
-    height: 100%; }
+    height: 0.86rem;
+    width: 2.45rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.225rem; }
+    header .con .img {
+      width: 0.99rem;
+      height: 0.31rem;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.13rem;
+      float: left; }
+      header .con .img img {
+        display: block; }
     header .con h4 {
-      font-size: 0.4rem; }
+      float: right;
+      font-size: 0.4rem;
+      line-height: 0.86rem;
+      color: #fff; }
+
+.search {
+  flex-shrink: 0;
+  height: 0.86rem;
+  border-top: 1px solid #636363;
+  border-bottom: 1px solid #282828;
+  background: #52525a;
+  position: relative; }
+  .search .sec {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 5.92rem;
+    height: 0.57rem;
+    background: #fff;
+    border-radius: 0.28rem; }
+    .search .sec .sec-icon {
+      width: 0.36rem;
+      height: 0.39rem;
+      float: left;
+      margin: 0.12rem 0 0 0.27rem;
+      background: url(../img/7_07.jpg) no-repeat center;
+      background-size: 100%; }
+    .search .sec input {
+      float: left;
+      margin-left: 0.1rem;
+      height: 0.57rem;
+      border: 0;
+      outline: none;
+      font-size: 0.22rem; }
+
+section {
+  overflow: auto;
+  flex-shrink: 1;
+  flex-grow: 1; }
+  section .sliderbox {
+    height: 2.5rem;
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #282828; }
+    section .sliderbox .swiper-container {
+      height: 2.5rem; }
+  section .goodsList {
+    font-size: 0.16rem; }
+    section .goodsList li {
+      height: 2.19rem;
+      padding: 0.2rem 0 0 0.15rem;
+      border-top: 1px solid #636363;
+      border-bottom: 1px solid #282828; }
+      section .goodsList li .goodsImg {
+        width: 1.72rem;
+        height: 1.72rem;
+        border-top: 1px solid #636363;
+        border-bottom: 1px solid #282828;
+        float: left; }
+      section .goodsList li .goodsText {
+        width: 3.82rem;
+        float: left;
+        margin-left: 0.16rem; }
+        section .goodsList li .goodsText h5 a {
+          font-size: 0.28rem;
+          line-height: 0.4rem; }
+        section .goodsList li .goodsText .goodsBot {
+          overflow: hidden; }
+          section .goodsList li .goodsText .goodsBot .goodsPrice {
+            float: left; }
+            section .goodsList li .goodsText .goodsBot .goodsPrice .price {
+              line-height: 0.45rem; }
+              section .goodsList li .goodsText .goodsBot .goodsPrice .price span {
+                color: #f32972;
+                font-size: 0.28rem; }
+              section .goodsList li .goodsText .goodsBot .goodsPrice .price i {
+                font-size: 0.2rem;
+                color: #bcbabb;
+                text-decoration: line-through; }
+            section .goodsList li .goodsText .goodsBot .goodsPrice .zhe {
+              line-height: 0.4rem;
+              font-size: 0.24rem; }
+          section .goodsList li .goodsText .goodsBot .addCart {
+            float: right;
+            width: 1.19rem;
+            height: 0.52rem;
+            margin-top: 0.22rem; }

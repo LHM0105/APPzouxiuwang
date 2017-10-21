@@ -201,87 +201,45 @@ header {
       line-height: 0.86rem;
       color: #fff; }
 
-.search {
-  flex-shrink: 0;
-  height: 0.86rem;
-  border-top: 1px solid #636363;
-  border-bottom: 1px solid #282828;
-  background: #52525a;
-  position: relative; }
-  .search .sec {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 5.92rem;
-    height: 0.57rem;
-    background: #fff;
-    border-radius: 0.28rem; }
-    .search .sec .sec-icon {
-      width: 0.36rem;
-      height: 0.39rem;
-      float: left;
-      margin: 0.12rem 0 0 0.27rem;
-      background: url(../img/7_07.jpg) no-repeat center;
-      background-size: 100%; }
-    .search .sec input {
-      float: left;
-      margin-left: 0.1rem;
-      height: 0.57rem;
-      border: 0;
-      outline: none;
-      font-size: 0.22rem; }
+header .con {
+  width: 2.1rem;
+  margin-left: -1.05rem; }
 
 section {
-  overflow: auto;
+  flex-grow: 1;
+  background: #f7f7f7;
   flex-shrink: 1;
-  flex-grow: 1; }
-  section .sliderbox {
-    height: 2.5rem;
-    border-top: 1px solid #636363;
-    border-bottom: 1px solid #282828; }
-    section .sliderbox .swiper-container {
-      height: 2.5rem; }
-  section .goodsList {
-    font-size: 0.16rem; }
-    section .goodsList li {
-      height: 2.19rem;
-      padding: 0.2rem 0 0 0.15rem;
-      border-top: 1px solid #636363;
-      border-bottom: 1px solid #282828; }
-      section .goodsList li .goodsImg {
-        width: 1.72rem;
-        height: 1.72rem;
-        border-top: 1px solid #636363;
-        border-bottom: 1px solid #282828;
-        float: left; }
-      section .goodsList li .goodsText {
-        width: 3.82rem;
-        float: left;
-        margin-left: 0.16rem; }
-        section .goodsList li .goodsText h5 a {
-          font-size: 0.28rem;
-          line-height: 0.4rem; }
-        section .goodsList li .goodsText .goodsBot {
-          overflow: hidden; }
-          section .goodsList li .goodsText .goodsBot .goodsPrice {
-            float: left; }
-            section .goodsList li .goodsText .goodsBot .goodsPrice .price {
-              line-height: 0.45rem; }
-              section .goodsList li .goodsText .goodsBot .goodsPrice .price span {
-                color: #f32972;
-                font-size: 0.28rem; }
-              section .goodsList li .goodsText .goodsBot .goodsPrice .price i {
-                font-size: 0.2rem;
-                color: #bcbabb;
-                text-decoration: line-through; }
-            section .goodsList li .goodsText .goodsBot .goodsPrice .zhe {
-              line-height: 0.4rem;
-              font-size: 0.24rem; }
-          section .goodsList li .goodsText .goodsBot .addCart {
-            float: right;
-            width: 1.19rem;
-            height: 0.52rem;
-            margin-top: 0.22rem; }
+  display: flex;
+  padding-top: 0.3rem; }
+  section .quan-box {
+    width: 5.22rem;
+    margin: 0 auto; }
+    section .quan-box ul {
+      width: 5.20rem;
+      height: 0.64rem;
+      font-size: 0.3rem;
+      display: flex;
+      justify-content: space-between;
+      background: url(../img/15youhuiquan_05.jpg) repeat-x;
+      border-radius: 0.04rem;
+      border: 0.01rem solid #aaa; }
+      section .quan-box ul li {
+        flex-grow: 1;
+        text-align: center;
+        line-height: 0.66rem;
+        border-left: 0.01rem solid #c3c3c3;
+        border-right: 0.01rem solid #a9a9a9; }
+      section .quan-box ul .active {
+        background: url(../img/15youhuiquan_03.jpg) repeat-x;
+        color: #fff; }
+    section .quan-box .con {
+      border: 0.01rem solid #aaa;
+      font-size: 0.24rem;
+      margin-top: 0.28rem;
+      background: #fff;
+      border-radius: 0.14rem;
+      padding: 0.14rem; }
+      section .quan-box .con p {
+        line-height: 0.38rem; }
+        section .quan-box .con p span {
+          color: #898989; }

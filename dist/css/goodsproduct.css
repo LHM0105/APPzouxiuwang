@@ -201,87 +201,39 @@ header {
       line-height: 0.86rem;
       color: #fff; }
 
-.search {
-  flex-shrink: 0;
-  height: 0.86rem;
-  border-top: 1px solid #636363;
-  border-bottom: 1px solid #282828;
-  background: #52525a;
-  position: relative; }
-  .search .sec {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 5.92rem;
-    height: 0.57rem;
-    background: #fff;
-    border-radius: 0.28rem; }
-    .search .sec .sec-icon {
-      width: 0.36rem;
-      height: 0.39rem;
-      float: left;
-      margin: 0.12rem 0 0 0.27rem;
-      background: url(../img/7_07.jpg) no-repeat center;
-      background-size: 100%; }
-    .search .sec input {
-      float: left;
-      margin-left: 0.1rem;
-      height: 0.57rem;
-      border: 0;
-      outline: none;
-      font-size: 0.22rem; }
+header .con {
+  width: 1.6rem;
+  margin-left: -0.8rem; }
+
+header .share-btn {
+  background: url(../img/xiangqing_03.jpg) no-repeat center;
+  background-size: 100%;
+  width: 1.12rem;
+  height: 0.58rem; }
 
 section {
-  overflow: auto;
-  flex-shrink: 1;
-  flex-grow: 1; }
-  section .sliderbox {
-    height: 2.5rem;
+  flex-grow: 1;
+  background: #f7f7f7;
+  display: flex; }
+  section .warn {
+    height: 0.86rem;
     border-top: 1px solid #636363;
-    border-bottom: 1px solid #282828; }
-    section .sliderbox .swiper-container {
-      height: 2.5rem; }
-  section .goodsList {
-    font-size: 0.16rem; }
-    section .goodsList li {
-      height: 2.19rem;
-      padding: 0.2rem 0 0 0.15rem;
-      border-top: 1px solid #636363;
-      border-bottom: 1px solid #282828; }
-      section .goodsList li .goodsImg {
-        width: 1.72rem;
-        height: 1.72rem;
-        border-top: 1px solid #636363;
-        border-bottom: 1px solid #282828;
-        float: left; }
-      section .goodsList li .goodsText {
-        width: 3.82rem;
-        float: left;
-        margin-left: 0.16rem; }
-        section .goodsList li .goodsText h5 a {
-          font-size: 0.28rem;
-          line-height: 0.4rem; }
-        section .goodsList li .goodsText .goodsBot {
-          overflow: hidden; }
-          section .goodsList li .goodsText .goodsBot .goodsPrice {
-            float: left; }
-            section .goodsList li .goodsText .goodsBot .goodsPrice .price {
-              line-height: 0.45rem; }
-              section .goodsList li .goodsText .goodsBot .goodsPrice .price span {
-                color: #f32972;
-                font-size: 0.28rem; }
-              section .goodsList li .goodsText .goodsBot .goodsPrice .price i {
-                font-size: 0.2rem;
-                color: #bcbabb;
-                text-decoration: line-through; }
-            section .goodsList li .goodsText .goodsBot .goodsPrice .zhe {
-              line-height: 0.4rem;
-              font-size: 0.24rem; }
-          section .goodsList li .goodsText .goodsBot .addCart {
-            float: right;
-            width: 1.19rem;
-            height: 0.52rem;
-            margin-top: 0.22rem; }
+    border-bottom: 1px solid #282828;
+    background: #333333;
+    width: 100%; }
+    section .warn p {
+      color: #fff;
+      height: 0.86rem;
+      line-height: 0.86rem;
+      font-size: 0.3rem;
+      text-align: center; }
+
+footer .foot-btn {
+  width: 2.13rem; }
+  footer .foot-btn p {
+    font-size: 0.36rem;
+    height: 0.9rem;
+    line-height: 0.9rem; }
+
+footer .active {
+  border-top-color: #e4366b; }

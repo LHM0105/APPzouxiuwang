@@ -60,7 +60,7 @@ gulp.task('minifyIMG',function(){
 
 // 新建重新加载reload任务
 gulp.task('reload', ["minifyJS",'minifySCSS','minifyHTML','compileSCSS'], function () {
-	gulp.src('./dist/index.html').pipe(connect.reload());
+	gulp.src('./dist/myorder.html').pipe(connect.reload());
 });
 
 //创建一个默认执行的任务（在命令行窗口输入gulp就会执行这个任务）

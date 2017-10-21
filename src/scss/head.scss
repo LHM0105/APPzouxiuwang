@@ -1,0 +1,61 @@
+@import "commons";
+header{
+    flex-shrink: 0;
+    background: $maincolor;
+    height: 0.86rem;
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #282828;
+    position: relative;
+    //回退按钮
+    .back{
+        width: 0.54rem;
+        height: 0.36rem;
+        float: left;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.18rem;
+        background: url(../img/xiangqing_06.jpg) no-repeat center;
+        background-size: 100%;
+        margin-left: 0.2rem;
+    }
+    
+    //右侧按钮
+    .btn-box{
+        width: 1.09rem;
+        height: 0.57rem;
+        float: right;
+        margin-right: 0.14rem;
+        background: url(../img/12_03.jpg) no-repeat center;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.285rem;
+        right: 0.18rem;
+    }
+    //中间部分
+    .con{
+        height: 0.86rem;
+        width: 2.45rem;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -1.225rem;
+        .img{
+            width: 0.99rem;
+            height: 0.31rem;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.13rem;
+            float: left;
+            img{
+                display: block;
+            }
+        }
+        h4{
+            float: right;
+            font-size: 0.4rem;
+            line-height: 0.86rem;
+            color: #fff;
+        }
+    }
+}

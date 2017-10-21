@@ -1,0 +1,12 @@
+@import "commons";
+header{
+    background: $maincolor;
+    height: 0.86rem;
+    
+    .con{
+        height: 100%;
+        h4{
+            font-size: (40rem/100);
+        }
+    }
+}

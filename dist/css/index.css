@@ -244,6 +244,14 @@ section {
     border-bottom: 1px solid #282828; }
     section .sliderbox .swiper-container {
       height: 2.5rem; }
+      section .sliderbox .swiper-container .swiper-pagination-bullets {
+        bottom: -0.1rem; }
+        section .sliderbox .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+          background: #fff;
+          opacity: 1;
+          margin: 0 0.04rem; }
+        section .sliderbox .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
+          background: #e4366b; }
   section .goodsList {
     font-size: 0.16rem; }
     section .goodsList li {

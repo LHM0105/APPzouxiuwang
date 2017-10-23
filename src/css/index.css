@@ -249,7 +249,9 @@ section {
         section .sliderbox .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
           background: #fff;
           opacity: 1;
-          margin: 0 0.04rem; }
+          margin: 0 0.04rem;
+          width: 0.14rem;
+          height: 0.14rem; }
         section .sliderbox .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
           background: #e4366b; }
   section .goodsList {

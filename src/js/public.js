@@ -4,15 +4,6 @@ $(function(){
     var htmlTag = document.getElementsByTagName("html")[0];
     htmlTag.style.fontSize=bw;
     
-//  //登录页选中记住密码
-//  $('#ismemory').click(function(){
-//  	console.log($(this).prop('checked'));
-//  	if($(this).prop('checked')){
-//  		$(this).siblings('.check-icon').removeClass('no-check')
-//  	}else{
-//  		$(this).siblings('.check-icon').addClass('no-check')
-//  	}
-    
     //点击注册
     $('#register-btn').click(function(){
     	var name = $('#username').val();

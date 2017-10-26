@@ -59,16 +59,19 @@ gulp.task('minifyIMG',function(){
 });
 
 // 新建重新加载reload任务
-gulp.task('reload', ["minifyJS",'minifySCSS','minifyHTML','compileSCSS'], function () {
+gulp.task('reload', ['compileSCSS'], function () {
+//gulp.task('reload', ["minifyJS",'minifySCSS','minifyHTML','compileSCSS'], function () {
 	gulp.src('./dist/myorder.html').pipe(connect.reload());
 });
 
 //创建一个默认执行的任务（在命令行窗口输入gulp就会执行这个任务）
-gulp.task('default',["minifyJS",'minifySCSS','minifyHTML','compileSCSS'],function(){
-	//开启服务器
-	connect.server({
-		livereload:true
-	});
+gulp.task('default',['compileSCSS'],function(){
+//gulp.task('default',["minifyJS",'minifySCSS','minifyHTML','compileSCSS'],function(){
+//	//开启服务器
+//	connect.server({
+//		livereload:true
+//	});
 
-	gulp.watch(['./src/js/*.js','./src/scss/*.scss','./src/*.html','./src/scss/*.scss'],['reload']);
+	gulp.watch(['./src/scss/*.scss'],['reload']);
+//	gulp.watch(['./src/js/*.js','./src/scss/*.scss','./src/*.html','./src/scss/*.scss'],['reload']);
 });

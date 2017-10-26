@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><title></title><style>*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				height: 100%;
+			}
+			ul{
+				list-style: none;
+				
+			}
+			li{
+				padding: 10px;
+			}
+			
+			.scroll0{
+				width:100%;
+				height: 50px;
+				background: greenyellow;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.scroll0 ul{
+				width: 300%;
+				line-height: 50px;
+				color: #444;
+			}
+			.scroll0 ul li{
+				float: left;
+			}
+			.iscroll{
+				/*height: 500px;*/
+				
+				/*border: 1px solid #000000;*/
+				overflow: hidden;
+				position: absolute;
+				top: 50px;
+				bottom:80px;
+				/*height: 80%;*/
+				width: 100%;
+			}</style></head><body><div class="iscroll" id="iscroll"><div><ul><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li></ul><ul><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li><li>那就试试吧</li></ul></div></div><div class="scroll0" id="iscroll0"><ul><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li><li>横向滚动</li></ul></div><script src="js/iscroll-min.js"></script><script>var isc = new IScroll("#iscroll",{
+				mouseWheel:true,
+				scrollbars:true
+			})
+			var isc0 = new IScroll("#iscroll0",{
+				mouseWhell:true,
+				scrollX:true,
+				scrollY:false
+			})</script></body></html>

@@ -62,7 +62,6 @@ input {
   outline: none; }
 
 footer {
-  flex-shrink: 0;
   height: 0.96rem;
   border-top: 1px solid #636363;
   border-bottom: 1px solid #282828;
@@ -164,7 +163,6 @@ input {
   outline: none; }
 
 header {
-  flex-shrink: 0;
   background: #e4366b;
   height: 0.86rem;
   border-top: 1px solid #636363;
@@ -214,7 +212,6 @@ header {
       color: #fff; }
 
 .search {
-  flex-shrink: 0;
   height: 0.86rem;
   border-top: 1px solid #636363;
   border-bottom: 1px solid #282828;
@@ -247,9 +244,9 @@ header {
       font-size: 0.22rem; }
 
 section {
-  overflow: auto;
-  flex-shrink: 1;
-  flex-grow: 1; }
+  overflow: hidden;
+  flex: 1;
+  position: relative; }
   section .sliderbox {
     height: 2.5rem;
     border-top: 1px solid #636363;

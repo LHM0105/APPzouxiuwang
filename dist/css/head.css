@@ -55,6 +55,12 @@ li {
 input, img {
   border: none; }
 
+i {
+  font-style: normal; }
+
+input {
+  outline: none; }
+
 header {
   flex-shrink: 0;
   background: #e4366b;

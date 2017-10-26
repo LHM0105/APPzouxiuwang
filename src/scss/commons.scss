@@ -25,6 +25,7 @@ address,caption,cite,code,dfn,em,strong,th,var {
 }   
 ol,ul {   
     list-style:none;   
+    
 }   
 caption,th {   
     text-align:left;   
@@ -57,3 +58,10 @@ input,img{
     border: none;  
 }  
 $maincolor: #e4366b;
+i{
+    font-style: normal;
+}
+
+input{
+    outline: none;
+}

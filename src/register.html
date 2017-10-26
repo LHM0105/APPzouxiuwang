@@ -5,8 +5,8 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
-		<script src="js/jquery1.8.3.js"></script>
-		<script src="js/public.js"></script>
+		
+		
 	</head>
 	<body>
 		<header>
@@ -21,32 +21,32 @@
 		</header>
 		<section>
 			<div class="login register">
-				<form action="" method="post">
+				<form action="javascript:;" method="post">
 					<div class="ipt-box name-ipt">
 						<span class="ipt-bg-l"></span>
 						<div class="ipt">
-							<input type="text" value="" placeholder="账号"/>
+							<input type="text" value="" placeholder="账号" id="username"/>
 						</div>
 						<span class="ipt-bg-r"></span>
 					</div>
 					<div class="ipt-box pwd-ipt r-pwd-ipt">
 						<span class="ipt-bg-l"></span>
 						<div class="ipt">
-							<input type="password" value="" placeholder="密码" />
+							<input type="password" value="" placeholder="密码" id="pwd"/>
 						</div>
 						<span class="ipt-bg-r"></span>
 					</div>
 					<div class="ipt-box re-pwd-ipt">
 						<span class="ipt-bg-l"></span>
 						<div class="ipt">
-							<input type="password" value="" placeholder="重复密码" />
+							<input type="password" value="" placeholder="重复密码" id="repwd"/>
 						</div>
 						<span class="ipt-bg-r"></span>
 					</div>
 					
 					<!--登录按钮-->
-					<div class="register-btn">
-						<input type="submit" value="" />
+					<div class="register-btn" id="register-btn">
+						<input type="button" value=""/>
 					</div>
 				</form>
 			</div>
@@ -73,5 +73,8 @@
 				<p>更多</p>
 			</div>
 		</footer>
+		
+		<script src="js/zepto.min.js"></script>
+		<script src="js/public.js"></script>
 	</body>
 </html>

@@ -222,18 +222,17 @@ header .myorder-con {
   margin-left: -0.84rem; }
 
 section {
-  flex-grow: 1;
   background: #f7f7f7;
-  flex-shrink: 1;
-  display: flex; }
+  flex: 1;
+  overflow: hidden;
+  position: relative; }
   section .no-goods {
     padding-top: 0.6rem;
     flex: none;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    display: none; }
+    align-items: center; }
     section .no-goods .pic {
       font-size: 0.36rem;
       margin-bottom: 0.7rem; }
@@ -291,7 +290,8 @@ section {
           border: 0.01rem solid #bababa;
           position: absolute;
           top: 50%;
-          margin-top: -0.86rem; }
+          margin-top: -0.86rem;
+          overflow: hidden; }
         section .have .goods-box li .text {
           width: 3.83rem;
           height: 1.72rem;
@@ -299,19 +299,21 @@ section {
           top: 50%;
           margin-top: -0.86rem;
           right: 0.25rem; }
-          section .have .goods-box li .text .title-box .title {
-            line-height: 0.38rem;
-            width: 3.4rem;
-            float: left; }
-          section .have .goods-box li .text .title-box b {
-            background: url(../img/17shoucang_06.jpg) no-repeat;
-            background-size: 100%;
-            width: 0.28rem;
-            height: 0.32rem;
-            float: right;
-            margin-top: 0.06rem; }
-          section .have .goods-box li .text .title-box > span {
-            float: right; }
+          section .have .goods-box li .text .title-box {
+            overflow: hidden; }
+            section .have .goods-box li .text .title-box .title {
+              line-height: 0.38rem;
+              width: 3.4rem;
+              float: left; }
+            section .have .goods-box li .text .title-box b {
+              background: url(../img/17shoucang_06.jpg) no-repeat;
+              background-size: 100%;
+              width: 0.28rem;
+              height: 0.32rem;
+              float: right;
+              margin-top: 0.06rem; }
+            section .have .goods-box li .text .title-box > span {
+              float: right; }
           section .have .goods-box li .text .info {
             height: 0.46rem; }
             section .have .goods-box li .text .info p {

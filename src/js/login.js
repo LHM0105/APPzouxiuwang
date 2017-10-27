@@ -66,13 +66,17 @@ $(function(){
    				//如果返回数据为对象
    				if(data.charAt(0) == "{"){
    					alert("登录成功");
-					
+					//转到主页面
+					window.location.href = "index.html";
    					//如果用户勾选了记住密码
    					if(check){
    						//把用户信息存入localStorage
    						var userStr = '{"userID":"'+user.id+'","password":"'+user.password+'"}';
    						localStorage.setItem('user',userStr);
    					}
+   					//把用户名存入localStorage
+   					localStorage.setItem('zxwUserID',user.id);
+   					
    					
    				}else{
    					alert("亲，你的浏览器出现异常 错误代码443")

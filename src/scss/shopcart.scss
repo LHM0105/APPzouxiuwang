@@ -15,19 +15,17 @@ header{
 }
 
 section{
-    flex-grow: 1;
     background: #f7f7f7;
-    flex-shrink: 1;
-    display: flex;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
     .no-goods{
         padding-top: 0.6rem;
         flex: none;
-//      width: 2.62rem;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        display: none;
         .pic{
             font-size: 0.36rem;
             margin-bottom: 0.7rem;
@@ -49,11 +47,11 @@ section{
         }
     }
     .have{
-        //      display:none;
         width: 100%;
         overflow: auto;
         display: flex;
         flex-direction: column;
+//      height: 8rem;
         .total-box{
             flex-grow: 0;
             flex-shrink: 0;
@@ -95,6 +93,7 @@ section{
                     position: absolute;
                     top: 50%;
                     margin-top: -(1.72rem/2);
+                    overflow: hidden;
                 }
                 .text{
                     width: 3.83rem;
@@ -104,6 +103,7 @@ section{
                     margin-top: -(1.72rem/2);
                     right: 0.25rem;
                     .title-box{
+                        overflow: hidden;
                         .title{
                             line-height: 0.38rem;
                             width: 3.4rem;

@@ -249,6 +249,30 @@ section {
   overflow: hidden;
   flex: 1;
   position: relative; }
+  section .sortList {
+    font-size: 0.42rem;
+    background-color: #fefcfd;
+    overflow: auto; }
+    section .sortList > li {
+      border-bottom: 0.01rem solid #aaa;
+      height: 0.86rem;
+      line-height: 0.9rem;
+      padding-left: 0.4rem;
+      position: relative; }
+      section .sortList > li span {
+        position: absolute;
+        right: 0.3rem;
+        top: 50%;
+        margin-top: -0.15rem;
+        width: 0.29rem;
+        height: 0.3rem;
+        background: url(../img/8_06.jpg) no-repeat center;
+        background-size: 100%; }
+    section .sortList .all {
+      padding-left: 0.24rem; }
+      section .sortList .all span {
+        background: url(../img/8_03.jpg) no-repeat center;
+        background-size: 100%; }
   section .sliderbox {
     height: 2.5rem;
     border-top: 1px solid #636363;

@@ -231,7 +231,10 @@ section {
     section .my-info .photo {
       width: 1.66rem;
       height: 1.66rem;
-      float: left; }
+      float: left;
+      font-size: 20px;
+      text-align: center;
+      line-height: 1.66rem; }
     section .my-info .name {
       padding: 0.26rem 0 0 0.32rem;
       overflow: hidden; }

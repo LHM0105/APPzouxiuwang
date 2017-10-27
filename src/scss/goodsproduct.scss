@@ -4,8 +4,12 @@
 
 header{
     .con{
-        width: 1.6rem;
+        width: 1.8rem;
         margin-left:-0.8rem;
+        h4{
+            width: 100%;
+            text-align: center;
+        }
     }
     .share-btn{
         background: url(../img/xiangqing_03.jpg) no-repeat center;
@@ -22,6 +26,7 @@ section{
     overflow-y: auto;
     overflow-x: hidden;
     flex-shrink: 1;
+    
     //18
     .section1{
         flex-grow: 1;
@@ -52,7 +57,10 @@ section{
                height: 3.66rem;
                border: 0.01rem solid #AAAAAA;
                margin: 0.28rem auto; 
-               overflow: hidden;   
+               overflow: hidden;  
+               text-align: center; 
+               line-height: 3.66rem;
+               font-size: 0.5rem;
            }
            .tit-pic{
                font-size: 0.38rem;
@@ -101,8 +109,8 @@ section{
     }
     //19
     .detail-con{
-//      display: block;
-        display: none;
+        display: block;
+//      display: none;
         font-size: 0.24rem;
         .pic{
             width: 100%;
@@ -114,12 +122,14 @@ section{
             line-height: 0.38rem;   
         }
     }
+    
     .section3{
         width: 100%;
         flex-grow: 1;
         display: flex;
         overflow: hidden;
-        display: none;
+//      display: none;
+
         .swiper-container{
             flex-flow: 1;
             .swiper-pagination-bullets{
@@ -136,6 +146,7 @@ section{
             }
         }
     }
+    
 }
 
 footer{

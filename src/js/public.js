@@ -4,55 +4,46 @@ $(function(){
     var htmlTag = document.getElementsByTagName("html")[0];
     htmlTag.style.fontSize=bw;
     
-    //点击注册
-    $('#register-btn').click(function(){
-    	var name = $('#username').val();
-    	var pwd = $('#pwd').val();
-    	var repwd = $('#repwd').val();
-//  	console.log(name,pwd,repwd);
-	
-    	if(name == ""){
-    		alert('请填写用户名')
-    	}else{
-    		if(pwd == ""){
-    			alert('请填写密码');
-    		}else{
-    			if(pwd === repwd){
-    //				console.log('填写正确，发送数据给后台')
-    				var user = {
-    					id:name,
-    					password:pwd
-    				}
-    				//发送给后台数据
-    				getRegister(user);
-    			}else{
-    				alert("两次密码不一致")
-    			}
-    		}
-    	}
+    //点击底部按钮（我的）
+    $('#footbtn-myshow').on('touchstart',function(){
+    	console.log('我的');
+    	//判断是否登录
+    	//获取本地是否存入
+//  	var zxwUserId = localStorage.getItem('zxwUserID');
+//  	if(zxwUserId != null || zxwUserId){
+    		//用户已登录
+    		
+    		//跳转到用户信息页
+			window.location.href = "myshow.html";
+    		
+//  	}else{
+    		//跳转到登录页
+//		  	window.location.href = "login.html";
+//  	}
     })
     
-    function getRegister(user){
-    	$.ajax({
-    		type:"post",
-    		url:" http://datainfo.duapp.com/shopdata/userinfo.php",
-    		data:{
-    			status:"register",
-    			userID:user.id,
-    			password:user.password
-    		},
-    		success:function(data){
-				console.log(data);
-				if(data == '0'){
-					alert('用户名重复')
-				}else if(data=='2'){
-					alert('数据库出错')
-				}else if(data =='1'){
-					alert('注册成功')
-				}
-    		}
-    	});
-    }
+ 	//点击底部按钮（首页）
+ 	$('#footbtn-home').on('touchstart',function(){
+  		window.location.href = "index.html";
+    	
+    })
+ 
+   	//点击底部按钮（分类）
+   	$('#footbtn-lei').on('touchstart',function(){
+		window.location.href = "allSort.html";
+    })
+ 	
+ 	//点击底部按钮（购物车）
+ 	$('#footbtn-cart').on('touchstart',function(){
+  		window.location.href = "shopcart.html";
+    	
+    })
+ 	
+ 	//底部（更多）
+ 	$('#footbtn-more').on('touchstart',function(){
+  		window.location.href = "24more.html";
+    })
     
 });
+
 

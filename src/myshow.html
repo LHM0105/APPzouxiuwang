@@ -5,8 +5,7 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/myshow.css"/>
-		<script src="js/jquery1.8.3.js"></script>
-		<script src="js/public.js"></script>
+		
 	</head>
 	<body>
 		<header>
@@ -15,20 +14,20 @@
 				<h4>我的秀</h4>
 			</div>
 		</header>
-		<section>
+		<section id="MyshowSection">
 			<div class="my-info">
-				<div class="photo">
+				<div class="photo" id="photobox">
 					<img src="img/11myshow_03.jpg" width="100%" />
 				</div>
-				<div class="name">
-					<p>昵称：<span>未知</span></p>
+				<div class="name" id="namebox">
+					<p>昵称：<span id="username">未知</span></p>
 					<div class="btns">
-						<span class="login"></span>
-						<span class="register"></span>
+						<span class="login" id="myshow-loginbtn"></span>
+						<span class="register" id="myshow-register"></span>
 					</div>
 				</div>
 			</div>
-			<div class="my-list">
+			<!--<div class="my-list">
 				<ul>
 					<li>
 						<span>我的订单</span>
@@ -38,7 +37,7 @@
 						<span>我的优惠券</span>
 						<i></i>
 					</li>
-					<li>
+					<li id="browlog">
 						<span>浏览记录</span>
 						<i></i>
 					</li>
@@ -47,29 +46,33 @@
 						<i></i>
 					</li>
 				</ul>
-			</div>
+			</div>-->
 		</section>
 		<footer>
-			<div class="foot-btn home">
+			<div class="foot-btn home" id="footbtn-home">
 				<div class="icon"></div>
 				<p>首页</p>
 			</div>
-			<div class="foot-btn  type">
+			<div class="foot-btn  type" id="footbtn-lei">
 				<div class="icon"></div>
 				<p>分类</p>
 			</div>
-			<div class="foot-btn  cart">
+			<div class="foot-btn  cart" id="footbtn-cart">
 				<div class="icon"></div>
 				<p>购物车</p>
 			</div>
-			<div class="foot-btn  mine active">
+			<div class="foot-btn  mine active" id="footbtn-myshow">
 				<div class="icon"></div>
 				<p>我的</p>
 			</div>
-			<div class="foot-btn more">
+			<div class="foot-btn more" id="footbtn-more">
 				<div class="icon"></div>
 				<p>更多</p>
 			</div>
 		</footer>
+		
+		<script src="js/zepto.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/myshow.js"></script>
 	</body>
 </html>

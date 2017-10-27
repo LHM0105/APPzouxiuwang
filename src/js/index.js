@@ -93,7 +93,7 @@ $(function(){
 												<p class="price"><span>￥${newPrice}</span><i>￥${oldPrice}</i></p>
 												<p class="zhe">${discount}折</p>
 											</div>
-											<div class="addCart">
+											<div class="addCart" data-goodsId=${data[index].goodsID}>
 												<img src="img/17_03.jpg" width="100%" />
 											</div>`;
 						$(oText).append(oTit);
@@ -114,6 +114,68 @@ $(function(){
 			               	window.location.href = "18goodsproduct.html?goodsID="+encodeURI(data[index].goodsID)
 			           });
 					});
+					
+					var numIncart = 1;
+					var userId = localStorage.getItem("zxwUserID");
+					
+					//点击加入购物车
+					$('.addCart').on('touchstart',function(){
+						if(userId == null){
+							alert("请先登录");
+						}else{
+							console.log(this);
+							var goodsId = $(this).attr('data-goodsId');
+							
+							console.log(userId,goodsId,numIncart);
+							//获取此商品在购物车中的信息
+							$.ajax({
+								type:"get",
+								url:"http://datainfo.duapp.com/shopdata/getCar.php",
+								dataType:"jsonp",
+								data:{
+									userID: userId
+								},
+								success:function(data){
+									console.log("获取购物车信息：");
+									console.log(data);
+									var bool = true;
+									$.each(data, function(index) {
+										if(data[index].goodsID == goodsId){
+											numIncart = parseInt(data[index].number)+1;
+											console.log("num:"+numIncart);
+											bool = false;
+										}
+	//									console.log(data[index].goodsID,data[index].number);
+									});
+									
+									if(bool === true){
+										numIncart = 1;
+									}
+									//添加进入购物车
+									$.ajax({
+										type:"post",
+										url:"http://datainfo.duapp.com/shopdata/updatecar.php",
+										data:{
+				//userID:用户名（必须参数）	数据成功更新：1
+				//goodsID:要更新的商品ID（必须参数）	数据更新失败：0
+				//number
+											userID:userId,
+											goodsID:goodsId,
+											number:numIncart
+										},
+										success:function(data){
+											console.log(data);
+											if(parseInt(data) === 1){
+												alert("已加入购物车");
+											}else if(parseInt(data) === 0){
+												alert('亲，网络不顺畅哦，没有添加成功呢')
+											}
+										}
+									});
+								}//end success
+							});//end ajax for 
+						}
+					})//end addCart()
 				}
 			}
 		});

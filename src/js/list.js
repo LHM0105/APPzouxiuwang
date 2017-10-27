@@ -87,9 +87,11 @@ $(function(){
 				if(data.length){
 					console.log(data);
 					//加入购物车时使用(商品id)
-					var goodsId;
+//					var goodsId;
 					//获取当前登录用户的id
 					var userId = localStorage.getItem("zxwUserID");
+					
+					
 					var numIncart = 1;
 					
 					$.each(data,function(index){
@@ -130,56 +132,60 @@ $(function(){
 					
 					//点击加入购物车
 					$('.addCart').on('touchstart',function(){
-						console.log(this);
-						var goodsId = $(this).attr('data-goodsId');
-						console.log(userId,goodsId,numIncart);
-						//获取此商品在购物车中的信息
-						$.ajax({
-							type:"get",
-							url:"http://datainfo.duapp.com/shopdata/getCar.php",
-							dataType:"jsonp",
-							data:{
-								userID: userId
-							},
-							success:function(data){
-								console.log("获取购物车信息：");
-								console.log(data);
-								var bool = true;
-								$.each(data, function(index) {
-									if(data[index].goodsID == goodsId){
-										numIncart += parseInt(data[index].number);
-										console.log("num:"+numIncart);
-										bool = false;
-									}
-//									console.log(data[index].goodsID,data[index].number);
-								});
-								
-								if(bool === true){
-									numIncart = 1;
-								}
-								//添加进入购物车
-								$.ajax({
-									type:"post",
-									url:"http://datainfo.duapp.com/shopdata/updatecar.php",
-									data:{
-			//userID:用户名（必须参数）	数据成功更新：1
-			//goodsID:要更新的商品ID（必须参数）	数据更新失败：0
-			//number
-										userID:userId,
-										goodsID:goodsId,
-										number:numIncart
-									},
-									success:function(data){
-										console.log(data);
-										if(parseInt(data) === 1){
-											alert("已加入购物车");
-										}else if(parent(data) === 0){
-											alert('亲，网络不顺畅哦，没有添加成功呢')
+						if(userId == null){
+							alert("请先登录");
+						}else{
+							console.log(this);
+							var goodsId = $(this).attr('data-goodsId');
+							console.log(userId,goodsId,numIncart);
+							//获取此商品在购物车中的信息
+							$.ajax({
+								type:"get",
+								url:"http://datainfo.duapp.com/shopdata/getCar.php",
+								dataType:"jsonp",
+								data:{
+									userID: userId
+								},
+								success:function(data){
+									console.log("获取购物车信息：");
+									console.log(data);
+									var bool = true;
+									$.each(data, function(index) {
+										if(data[index].goodsID == goodsId){
+											numIncart = parseInt(data[index].number)+1;
+											console.log("num:"+numIncart);
+											bool = false;
 										}
+	//									console.log(data[index].goodsID,data[index].number);
+									});
+									
+									if(bool === true){
+										numIncart = 1;
 									}
-								});
-							}//end success
-						});//end ajax for 
+									//添加进入购物车
+									$.ajax({
+										type:"post",
+										url:"http://datainfo.duapp.com/shopdata/updatecar.php",
+										data:{
+				//userID:用户名（必须参数）	数据成功更新：1
+				//goodsID:要更新的商品ID（必须参数）	数据更新失败：0
+				//number
+											userID:userId,
+											goodsID:goodsId,
+											number:numIncart
+										},
+										success:function(data){
+											console.log(data);
+											if(parseInt(data) === 1){
+												alert("已加入购物车");
+											}else if(parseInt(data) === 0){
+												alert('亲，网络不顺畅哦，没有添加成功呢')
+											}
+										}
+									});
+								}//end success
+							});//end ajax for 
+						}
 					})//end addCart()
 					
 				}else{

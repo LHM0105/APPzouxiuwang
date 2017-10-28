@@ -12,7 +12,10 @@ var classId = getQueryString('classID');
 var userId = getQueryString('userid');
 //显示符合搜索条件的商品
 var selectText = getQueryString('goods');
+//获取collection字段
 var collection = getQueryString('collection');
+//获取myorder字段，以此判断是否请求我的订单页面的数据
+//var myorder = getQueryString("myorder");
 //浏览记录
 //var browLog = 
 var myScroll;
@@ -36,6 +39,7 @@ $(function(){
 		$("#headText").text('商品列表');
 		getData("http://datainfo.duapp.com/shopdata/selectGoodes.php",null,null,selectText);
 	}
+	
 	//用户的浏览记录商品列表
 	if(userId || userId != null){
 		getData("http://datainfo.duapp.com/shopdata/getCar.php",userId);
@@ -84,7 +88,7 @@ $(function(){
 				classID:classid,
 				selectText:selectText,
 				pageCode:page,
-				linenumber:9//每次加载6个
+				linenumber:8//每次加载?个
 			},
 			url:url,
 			success:function(data){

@@ -35,7 +35,7 @@ $(function(){
   				if(data.length){
 	  				$.each(data, function(index) {
 	//					console.log(data[index]);
-	  					var goodsName = data[index].goodsName;
+	  					var goodsName = data[index].goodsName.slice(0,24);
 	  					var price = data[index].price;
 	  					var num = data[index].number;
 	  					var imgSrc = data[index].goodsListImg;

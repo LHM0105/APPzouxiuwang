@@ -62,6 +62,7 @@ input {
   outline: none; }
 
 header {
+  flex-shrink: 0;
   background: #e4366b;
   height: 0.86rem;
   border-top: 1px solid #636363;

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel="stylesheet" type="text/css" href="css/myshow.css"><script src="js/jquery1.8.3.js"></script><script src="js/public.js"></script></head><body><header><div class="back"></div><div class="con more"><h4>更多</h4></div></header><section><!--<div class="my-info">
+<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel="stylesheet" type="text/css" href="css/myshow.css"></head><body><header><div class="back"></div><div class="con more"><h4>更多</h4></div></header><section><!--<div class="my-info">
 				<div class="photo">
 					<img src="img/11myshow_03.jpg" width="100%" />
 				</div>
@@ -9,4 +9,17 @@
 						<span class="register"></span>
 					</div>
 				</div>
-			</div>--><div class="my-list"><ul class="list1"><li><span>常见问题</span> <i></i></li><li><span>系统设置</span> <i></i></li><li><span>软件更新</span> <i></i></li><li><span>扫描二维码</span> <i></i></li></ul><ul class="list2"><li><span>我要提意见</span> <i></i></li><li><span>关于</span> <i></i></li></ul></div><div class="logout-btn"><p>退出登录</p></div></section><footer><div class="foot-btn home"><div class="icon"></div><p>首页</p></div><div class="foot-btn type"><div class="icon"></div><p>分类</p></div><div class="foot-btn cart"><div class="icon"></div><p>购物车</p></div><div class="foot-btn mine"><div class="icon"></div><p>我的</p></div><div class="foot-btn more active"><div class="icon"></div><p>更多</p></div></footer></body></html>
+			</div>--><div class="my-list"><ul class="list1"><li><span>常见问题</span> <i></i></li><li><span>系统设置</span> <i></i></li><li><span>软件更新</span> <i></i></li><li><span>扫描二维码</span> <i></i></li></ul><ul class="list2"><li><span>我要提意见</span> <i></i></li><li><span>关于</span> <i></i></li></ul></div><div class="logout-btn" id="logoutBtn"><p>退出登录</p></div></section><footer><div class="foot-btn home" id="footbtn-home"><div class="icon"></div><p>首页</p></div><div class="foot-btn type" id="footbtn-lei"><div class="icon"></div><p>分类</p></div><div class="foot-btn cart" id="footbtn-cart"><div class="icon"></div><p>购物车</p></div><div class="foot-btn mine" id="footbtn-myshow"><div class="icon"></div><p>我的</p></div><div class="foot-btn more active" id="footbtn-more"><div class="icon"></div><p>更多</p></div></footer><script src="js/zepto.min.js"></script><script src="js/public.js"></script><script>$(function(){
+				$("#logoutBtn").on('touchstart',function(){
+					if(window.confirm("亲 确定要退出吗？")){
+						console.log("确认退出");
+						//删除localStorage中的记录
+						localStorage.removeItem("zxwUserID");
+						//回到首页
+						window.location.href = "index.html";
+//						localStorage.removeItem("user");
+					}else{
+//						window.location.reload();
+					}
+				})
+			})</script></body></html>

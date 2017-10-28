@@ -41,7 +41,10 @@ $(function(){
    			toLogin(user);
    		}
    });
-   
+   //转到注册页
+   $("#register-btn").on('touchstart',function(){
+		window.location.href = "register.html";
+	})
    function getUser(name,pwd){
    		var user={
    			id:name,
@@ -67,7 +70,7 @@ $(function(){
    				if(data.charAt(0) == "{"){
    					alert("登录成功");
 					//转到主页面
-					window.location.href = "index.html";
+					window.location.href = "myshow.html";
    					//如果用户勾选了记住密码
    					if(check){
    						//把用户信息存入localStorage

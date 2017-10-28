@@ -1,4 +1,7 @@
 $(function(){
+	$("#tologin").on('touchstart',function(){
+		window.location.href = "login.html";
+	})
     //点击注册
     $('#register-btn').click(function(){
     	var name = $('#username').val();

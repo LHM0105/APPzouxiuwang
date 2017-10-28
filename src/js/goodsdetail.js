@@ -149,7 +149,7 @@ function getDetailData(id){
 					var oSwiperPag = document.createElement('div');
 					$(oSwiperPag).addClass('swiper-pagination');
 					$.each(spImgs,function(index){
-						var oSwiperslide = $('<div class="swiper-slide">图片加载中..</div>')
+						var oSwiperslide = $('<div class="swiper-slide" style="font-size:30px;text-indent:0.2rem">图片加载中..</div>')
 						var theImg = $('<img src="'+ spImgs[index] +'" width="100%" height="100%" />') ;
 						
 						theImg.on('load',function(){

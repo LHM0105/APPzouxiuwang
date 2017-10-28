@@ -62,6 +62,7 @@ input {
   outline: none; }
 
 footer {
+  flex-shrink: 0;
   height: 0.96rem;
   border-top: 1px solid #636363;
   border-bottom: 1px solid #282828;
@@ -163,6 +164,7 @@ input {
   outline: none; }
 
 header {
+  flex-shrink: 0;
   background: #e4366b;
   height: 0.86rem;
   border-top: 1px solid #636363;
@@ -229,7 +231,10 @@ section {
     section .my-info .photo {
       width: 1.66rem;
       height: 1.66rem;
-      float: left; }
+      float: left;
+      font-size: 20px;
+      text-align: center;
+      line-height: 1.66rem; }
     section .my-info .name {
       padding: 0.26rem 0 0 0.32rem;
       overflow: hidden; }

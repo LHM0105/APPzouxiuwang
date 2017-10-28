@@ -1,6 +1,30 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel="stylesheet" type="text/css" href="css/shopcart.css"><!--<script src="js/swiper-3.4.2.min.js"></script>--><script src="js/jquery1.8.3.js"></script><script src="js/public.js"></script></head><body><header><div class="back"></div><div class="con myorder-con"><!--<div class="img">
+<!DOCTYPE html><html><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel="stylesheet" type="text/css" href="css/shopcart.css"></head><body><header><div class="back" id="goodsBack"></div><div class="con myorder-con"><!--<div class="img">
 					<img src="img/main_03.jpg" width="100%"/>
-				</div>--><h4>浏览记录</h4></div><!--<div class="btn-box login-btn"></div>--></header><section><div class="no-goods"><div class="pic"><p>您还没有浏览过任何商品哦~</p><div class="img"></div></div><p class="btn-go">去逛逛</p></div><div class="have"><!--<div class="total-box">
-					<p>商品数量: <span>2</span></p>
-					<p class="yf">应付总额(不含运费)：<b>￥199</b></p>
-				</div>--><ul class="goods-box"><li><div class="img"><img src="img/14dingdan_03.jpg" width="100%"></div><div class="text"><div class="title-box"><p class="title">收藏商品标题 一行</p><b></b></div><p class="youhui">【买一赠一】</p><div class="info"><p class="a-price">单价：<span>￥199</span></p></div><div class="num"><span class="order-num sc-old-price">3.8折 <i>￥499</i></span> <i class="order-cancel-btn icon"></i></div></div></li><li><div class="img"><img src="img/14dingdan_03.jpg" width="100%"></div><div class="text"><div class="title-box"><p class="title">收藏商品标题 一行</p><b></b></div><p class="youhui">【买一赠一】</p><div class="info"><p class="a-price">单价：<span>￥199</span></p></div><div class="num"><span class="order-num sc-old-price">3.8折 <i>￥499</i></span> <i class="order-cancel-btn icon"></i></div></div></li><li><div class="img"><img src="img/14dingdan_03.jpg" width="100%"></div><div class="text"><div class="title-box"><p class="title">收藏商品标题 一行</p><b></b></div><p class="youhui">【买一赠一】</p><div class="info"><p class="a-price">单价：<span>￥199</span></p></div><div class="num"><span class="order-num sc-old-price">3.8折 <i>￥499</i></span> <i class="order-cancel-btn icon"></i></div></div></li><li><div class="img"><img src="img/14dingdan_03.jpg" width="100%"></div><div class="text"><div class="title-box"><p class="title">收藏商品标题 一行</p><b></b></div><p class="youhui">【买一赠一】</p><div class="info"><p class="a-price">单价：<span>￥199</span></p></div><div class="num"><span class="order-num sc-old-price">3.8折 <i>￥499</i></span> <i class="order-cancel-btn icon"></i></div></div></li><li><div class="img"><img src="img/14dingdan_03.jpg" width="100%"></div><div class="text"><div class="title-box"><p class="title">收藏商品标题 一行</p><b></b></div><p class="youhui">【买一赠一】</p><div class="info"><p class="a-price">单价：<span>￥199</span></p></div><div class="num"><span class="order-num sc-old-price">3.8折 <i>￥499</i></span> <i class="order-cancel-btn icon"></i></div></div></li><li><div class="img"><img src="img/14dingdan_03.jpg" width="100%"></div><div class="text"><div class="title-box"><p class="title">收藏商品标题 一行</p><b></b></div><p class="youhui">【买一赠一】</p><div class="info"><p class="a-price">单价：<span>￥199</span></p></div><div class="num"><span class="order-num sc-old-price">3.8折 <i>￥499</i></span> <i class="order-cancel-btn icon"></i></div></div></li></ul></div></section><footer><div class="foot-btn home"><div class="icon"></div><p>首页</p></div><div class="foot-btn type"><div class="icon"></div><p>分类</p></div><div class="foot-btn cart"><div class="icon"></div><p>购物车</p></div><div class="foot-btn mine active"><div class="icon"></div><p>我的秀</p></div><div class="foot-btn more"><div class="icon"></div><p>更多</p></div></footer></body></html>
+				</div>--><h4 id="headText">浏览记录</h4></div><!--<div class="btn-box login-btn"></div>--></header><section id="scroll"><!--<div class="no-goods">
+				<div class="pic">
+					<p>您还没有浏览过任何商品哦~</p>
+					<div class="img"></div>
+				</div>
+				<p class="btn-go">
+					去逛逛
+				</p>
+			</div>--><div class="have"><ul class="goods-box" id="SortgoodsList"><!--					
+					<li>
+						<div class="img">
+							<img src="img/14dingdan_03.jpg" width="100%" />
+						</div>
+						<div class="text">
+							<div class="title-box">
+								<p class="title">收藏商品标题 一行</p>
+								<b></b>
+							</div>
+							<p class="youhui">【买一赠一】</p>
+							<div class="info">
+								<p class="a-price">单价：<span>￥199</span></p>
+							</div>
+							<div class="num">
+								<span class="order-num sc-old-price">3.8折  <i>￥499</i></span>
+								<i class="order-cancel-btn icon"></i>
+							</div>
+						</div>
+					</li>--></ul></div></section><footer><div class="foot-btn home" id="footbtn-home"><div class="icon"></div><p>首页</p></div><div class="foot-btn type active" id="footbtn-lei"><div class="icon"></div><p>分类</p></div><div class="foot-btn cart" id="footbtn-cart"><div class="icon"></div><p>购物车</p></div><div class="foot-btn mine" id="footbtn-myshow"><div class="icon"></div><p>我的</p></div><div class="foot-btn more" id="footbtn-more"><div class="icon"></div><p>更多</p></div></footer><script src="js/zepto.min.js"></script><script src="js/iscroll-min.js"></script><script src="js/public.js"></script><script src="js/list.js"></script><!--<script src="js/index.js"></script>--></body></html>

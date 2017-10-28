@@ -24,7 +24,8 @@ $(function(){
   	//点击注册转到注册页
   	$('#myshow-register').on('touchstart',function(){
   		window.location.href = "register.html";
-  	})	
+  	})
+  	
 });
 function getUser(id){
 	$.ajax({
@@ -48,7 +49,7 @@ function getUser(id){
 			$('#namebox #username').html(id);	
 	    	$('#namebox .btns').empty();	
 	    	
-	    	var oDiv = $('<div class="my-list"> <ul> <li id="myorder"> <span>我的订单</span> <i></i> </li> <li> <span>我的优惠券</span> <i></i> </li> <li id="browlog"> <span>浏览记录</span> <i></i> </li> <li> <span>我的收藏</span> <i></i> </li> </ul> </div>');
+	    	var oDiv = $('<div class="my-list"> <ul> <li id="myorder"> <span>我的订单</span> <i></i> </li> <li id="myYouhui"> <span>我的优惠券</span> <i></i> </li> <li id="browlog"> <span>浏览记录</span> <i></i> </li> <li id="mycollect"> <span>我的收藏</span> <i></i> </li> </ul> </div>');
 	    	
 	    	$('#MyshowSection').append(oDiv);
 	    	//点击我的订单
@@ -61,6 +62,16 @@ function getUser(id){
 				console.log('跳转到浏览记录');
 				window.location.href = "16lljl.html?userid="+encodeURI(id);
 		  	});
+		  	//点击跳转到“我的收藏”
+		  	$('#mycollect').on('touchend',function(){
+				console.log('跳转到wdsc');
+				window.location.href = "16lljl.html?userid="+encodeURI(id)+"&collection=1";
+		  	});
+		  	//点击跳转到 我的优惠券
+		  	$('#myYouhui').on('touchend',function(){
+				window.location.href = "15myquan.html?userid="+encodeURI(id);
+		  	});
+		  	
 //	    	<div class="my-list">
 //				<ul>
 //					<li>

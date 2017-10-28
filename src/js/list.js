@@ -12,6 +12,7 @@ var classId = getQueryString('classID');
 var userId = getQueryString('userid');
 //显示符合搜索条件的商品
 var selectText = getQueryString('goods');
+var collection = getQueryString('collection');
 //浏览记录
 //var browLog = 
 var myScroll;
@@ -38,6 +39,9 @@ $(function(){
 	//用户的浏览记录商品列表
 	if(userId || userId != null){
 		getData("http://datainfo.duapp.com/shopdata/getCar.php",userId);
+		if(collection || collection != null){
+			$("#headText").text('我的收藏');
+		}
 	}
     
  	//添加滚动效果

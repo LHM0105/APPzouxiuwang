@@ -5,8 +5,7 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/myshow.css"/>
-		<script src="js/jquery1.8.3.js"></script>
-		<script src="js/public.js"></script>
+		
 	</head>
 	<body>
 		<header>
@@ -58,7 +57,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="logout-btn">
+			<div class="logout-btn" id="logoutBtn">
 				<p>退出登录</p>
 			</div>
 		</section>
@@ -84,5 +83,23 @@
 				<p>更多</p>
 			</div>
 		</footer>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/public.js"></script>
+		<script>
+			$(function(){
+				$("#logoutBtn").on('touchstart',function(){
+					if(window.confirm("亲 确定要退出吗？")){
+						console.log("确认退出");
+						//删除localStorage中的记录
+						localStorage.removeItem("zxwUserID");
+						//回到首页
+						window.location.href = "index.html";
+//						localStorage.removeItem("user");
+					}else{
+//						window.location.reload();
+					}
+				})
+			})
+		</script>
 	</body>
 </html>

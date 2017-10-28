@@ -269,7 +269,8 @@ section {
         line-height: 0.86rem;
         height: 0.86rem; }
       section .have .total-box .yf {
-        float: right; }
+        float: right;
+        width: 4.2rem; }
         section .have .total-box .yf b {
           color: #e73569; }
     section .have .goods-box {

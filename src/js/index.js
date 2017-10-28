@@ -2,14 +2,12 @@ $(function(){
 	var myScroll;
 	iscroll();
 	var iclassId = 1;
-	var mySwiper = new Swiper ('.swiper-container', {
-    	autoplay : 3000,//自动切换
-    	// 如果需要分页器
-    	pagination: '.swiper-pagination'
-	})
-
+	
+	//获取轮播图
+	getBanner();
 	//获取数据
     getData();
+    
   	function iscroll(){
   		myScroll = new IScroll("#scroll",{
   			mouseWheel:true,
@@ -48,8 +46,51 @@ $(function(){
 			iclassId++;
 		}
 	});
-	
-    
+	var mySwiper = new Swiper ('.swiper-container', {
+    	autoplay : 3000,//自动切换
+    	// 如果需要分页器
+    	pagination: '.swiper-pagination'
+	})
+    function getBanner(){
+    	$.ajax({
+    		type:"get",
+    		url:"http://datainfo.duapp.com/shopdata/getBanner.php",
+    		dataType:"jsonp",
+    		success:function(data){
+    			console.log(data);
+    			$.each(data, function(index) {
+    				var arrImg = JSON.parse(data[index].goodsBenUrl);
+    			
+    				console.log(JSON.parse(data[index].goodsBenUrl)[0]);
+    				var swiperslider = $("<div class='swiper-slide'>加载中...<div>");
+    				var img = $("<img src='"+JSON.parse(data[index].goodsBenUrl)[0]+"' width='100%' height='100%' />");
+    				img.on('load',function(){
+    					swiperslider.empty();
+    					swiperslider.append(img);
+    					//更新轮播图
+    					mySwiper.update();
+    				});
+    				$('.swiper-wrapper').append(swiperslider);
+    				
+//  				<div class="swiper-wrapper">
+//				        <div class="swiper-slide" style="background:yellow ;">
+//				        	
+//				        	<img src="img/main_10.jpg" width="100%" height="100%" />
+//				        </div>
+//				        <div class="swiper-slide" style="background: greenyellow;">
+//				        	<img src="img/main_10.jpg" width="100%" height="100%" />
+//				        </div>
+//				        <div class="swiper-slide" style="background: orangered;">
+//				        	<img src="img/main_10.jpg" width="100%" height="100%" />
+//				        </div>
+//				        <div class="swiper-slide" style="background: greenyellow;">
+//				        	<img src="img/main_10.jpg"  width="100%" height="100%" />
+//				        </div>
+//				    </div>
+    			});
+    		}
+    	});
+    }
 	//读取数据显示到页面
 	function getData(classid){
 		//从后台获取数据
@@ -78,7 +119,6 @@ $(function(){
 						thisImg.on('load',function(){
 							oImg.empty();
 							oImg.append(thisImg);
-							
 						})
 						
 						//文字部分

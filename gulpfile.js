@@ -22,12 +22,13 @@ gulp.task('minifyJS',function(){
 });
 //新建压缩重命名js文件的任务
 
-	// 新建压缩合并JS文件的任务
-gulp.task('minifyJS1', function () {
-	return gulp.src('./src/tryminifyJS/*.js').pipe(uglify())
-	.pipe(concat('all.js'))
-	.pipe(gulp.dest('./dist/tryjs/'));
-});
+//// 新建压缩合并JS文件的任务
+//gulp.task('minifyJS1', function () {
+//	return gulp.src('./src/tryminifyJS/*.js').pipe(uglify())
+//	.pipe(concat('all.js'))
+//	.pipe(gulp.dest('./dist/tryjs/'));
+//});
+
 //新建一个压缩html文件的任务(不压缩也可以，主要是压缩css和js)
 gulp.task('minifyHTML',function(){
 	return gulp.src('./src/*.html')

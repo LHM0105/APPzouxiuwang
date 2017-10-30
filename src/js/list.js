@@ -33,11 +33,15 @@ $(function(){
     	$("#headText").text('商品列表');
 		//获取数据
 	    getData("http://datainfo.duapp.com/shopdata/getGoods.php",null,classId);
+	    updatePage("http://datainfo.duapp.com/shopdata/getGoods.php",null,classId)
+	    
 	}
 	//搜索商品得到的商品列表
 	if(selectText || selectText!=null){
 		$("#headText").text('商品列表');
 		getData("http://datainfo.duapp.com/shopdata/selectGoodes.php",null,null,selectText);
+		
+		updatePage("http://datainfo.duapp.com/shopdata/selectGoodes.php",null,null,selectText)
 	}
 	
 	//用户的浏览记录商品列表
@@ -46,8 +50,34 @@ $(function(){
 		if(collection || collection != null){
 			$("#headText").text('我的收藏');
 		}
+		
+		updatePage("http://datainfo.duapp.com/shopdata/getCar.php",userId,null,null)
+		
 	}
-    
+	//上拉刷新，下拉加载更多
+    function updatePage(url,userid,classid,selectText){
+    	//分页功能
+		var page = 0;
+		//添加触摸下拉事件
+	    document.addEventListener("touchend",function(){
+	//    	上拉刷新
+			if(myScroll.y > 0){
+				//清空当前内容
+				$("#SortgoodsList").empty();
+				//重新加载数据
+				getData(url,userid,classid,selectText);
+			}
+			//下拉加载更多
+			//根据类别显示
+			if(myScroll.y < myScroll.maxScrollY -50){
+				page++;
+				console.log(page);
+	//			getData(iclassId);
+				//懒加载
+				getData(url,userid,classid,selectText,page)
+			}
+		});
+    }
  	//添加滚动效果
   	function iscroll(){
   		myScroll = new IScroll("#scroll",{
@@ -56,26 +86,28 @@ $(function(){
   		});
   	}
   	
-  	//分页功能
-	var page = 0;
-	//添加触摸下拉事件
-    document.addEventListener("touchend",function(){
-//    	上拉刷新
-		if(myScroll.y > 0){
-			//清空当前内容
-			$("#SortgoodsList").empty();
-			//重新加载数据
-			getData("http://datainfo.duapp.com/shopdata/getGoods.php",null,classId);
-		}
-		//下拉加载更多
-		//根据类别显示
-		if(myScroll.y < myScroll.maxScrollY -50){
-			page++;
-//			getData(iclassId);
-			//懒加载
-			getData("http://datainfo.duapp.com/shopdata/getGoods.php",null,classId,page)
-		}
-	});
+  	
+//	//分页功能
+//	var page = 0;
+//	//添加触摸下拉事件
+//  document.addEventListener("touchend",function(){
+////    	上拉刷新
+//		if(myScroll.y > 0){
+//			//清空当前内容
+//			$("#SortgoodsList").empty();
+//			//重新加载数据
+//			getData("http://datainfo.duapp.com/shopdata/getGoods.php",null,classId);
+//		}
+//		//下拉加载更多
+//		//根据类别显示
+//		if(myScroll.y < myScroll.maxScrollY -50){
+//			page++;
+//			console.log(page);
+////			getData(iclassId);
+//			//懒加载
+//			getData("http://datainfo.duapp.com/shopdata/getGoods.php",null,classId,page)
+//		}
+//	});
 	
 	//读取数据显示到页面
 	function getData(url,userid,classid,selectText,page){

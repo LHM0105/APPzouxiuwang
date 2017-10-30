@@ -114,11 +114,11 @@ $(function(){
 						var oImgbox = $('<div class="img">加载中...</div>');
 						var oImg = $('<img src="'+imgsrc+'"  width="100%" />');
 						
-						
 						oImg.on('load',function(){
 							oImgbox.empty();
 							oImgbox.append(oImg);
 						});
+						
 						var oText = $('<div class="text"> <div class="title-box"> <p class="title" class="goodsTit">'+goodsName+'</p> <b></b> </div> <p class="youhui"></p> <div class="info"> <p class="a-price">单价：<span>￥'+newPrice+'</span></p> </div> <div class="num"> <span class="order-num sc-old-price">'+discount+'折  <i>￥'+ oldPrice +'</i></span> <i class="order-cancel-btn icon addCart" data-goodsId="'+ data[index].goodsID+'"></i> </div> </div>');
 						$li.append(oImgbox);
 						$li.append(oText);

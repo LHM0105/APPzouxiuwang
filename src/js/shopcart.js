@@ -7,8 +7,14 @@ $(function(){
 		//读取数据库中数据呈现页面
 		getdata(userId);
 	}else{
-		alert("亲 您还没登录呢！请先登录");
-		window.location.href = "login.html";
+		$('#scroll').empty();
+		var oP = $('<p style="font-size:0.4rem;margin:1.5rem 0;text-align:center">亲您还没有登陆哦~</p>')
+		var oBtn = $('<a style="font-size:0.5rem;margin:0 auto;display:block;background:#fff;border:1px solid #aaa;width:1.8rem;text-align:center;border-radius:0.1rem">去登录</a>')
+		$("#scroll").append(oP);
+		$("#scroll").append(oBtn);
+		oBtn.on('touchstart',function(){
+			window.location.href = "login.html";
+		})
 	}
 	
 	//滚动效果
@@ -112,7 +118,7 @@ $(function(){
 							}.bind(this)
 						});
 					})
-	  				//购物车加减
+	  				//购物车数量加
 	  				$('.differ').on('touchstart',function(){
 	  					console.log("+");
 	  					console.log($(this).parent().attr('data-goodsid'))

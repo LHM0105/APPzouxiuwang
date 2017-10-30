@@ -8,11 +8,8 @@ function getQueryString(name){
 }
 //获取商品id
 var id = getQueryString('goodsID');
+
 $(function(){
-   	var mySwiper = new Swiper ('.swiper-container', {
-    	// 如果需要分页器
-    	pagination: '.swiper-pagination'
-	})
 	  
 	//显示内容
 	getDetailData(id);
@@ -169,7 +166,8 @@ function getDetailData(id){
 					
 					//添加轮播效果
 					var swiper = new Swiper('.swiper-container',{
-						pagination: '.swiper-pagination'
+						pagination: '.swiper-pagination',
+//						loop:true
 					})
 				}
 			});

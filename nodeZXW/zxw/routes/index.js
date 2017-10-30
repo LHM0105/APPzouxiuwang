@@ -17,7 +17,7 @@ router.post('/deleteOrder',function(req,res,next){
 		var removeData = function(db,callback){
 		var conn = db.collection("order");
 		console.log(order.orderID);
-		conn.remove({_id:order.orderID},function(err,results){
+		conn.remove({orderID:order.orderID},function(err,results){
 		    if(err){
 		        console.log("删除数据失败");
 		        res.send("0");
@@ -34,7 +34,7 @@ router.post('/deleteOrder',function(req,res,next){
 			console.log("数据库连接失败")
 			res.send("数据库连接失败");
 		}else{
-//			res.send("数据库连接成功")
+//			res.send("数据库连接成功");
 			removeData(db,function(results){
 				if(err){
 //					console.log(results);
@@ -57,7 +57,7 @@ router.get('/order/:id', function(req, res, next) {
 	var findData = function(db,callback){
 		//链接集合
 		var conn = db.collection("order");
-		conn.find({userID:userid}).toArray(function(err,results){
+		conn.find({userId:userid}).toArray(function(err,results){
 			if(err){
 				console.log("查询失败"+err)
 			}else{

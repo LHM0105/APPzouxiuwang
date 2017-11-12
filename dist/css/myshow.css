@@ -218,8 +218,10 @@ header .con {
   margin-left: -0.62rem; }
 
 header .more {
-  width: 0.8rem;
+  width: 0.9rem;
   margin-left: -0.4rem; }
+  header .more h4 {
+    text-align: center; }
 
 section {
   flex-grow: 1;

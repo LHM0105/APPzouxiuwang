@@ -6,6 +6,7 @@ var minifycss = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var connect = require('gulp-connect');
 //var sass = require('gulp-sass');
+var babel = require('gulp-babel');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 //新建rename（重命名）一个任务
@@ -17,6 +18,7 @@ gulp.task('rename',function(){
 //新建压缩重命名js文件的任务
 gulp.task('minifyJS',function(){
 	return gulp.src('./src/js/*.js').
+	pipe(babel({presets:['es2015']})).
 	pipe(uglify()).
 	pipe(gulp.dest('./dist/js'));
 });
@@ -67,19 +69,19 @@ gulp.task('minifyIMG',function(){
 });
 
 // 新建重新加载reload任务
-gulp.task('reload', ['compileSCSS'], function () {
-//gulp.task('reload', ["minifyJS",'minifySCSS','minifyHTML','compileSCSS'], function () {
+//gulp.task('reload', ['compileSCSS'], function () {
+gulp.task('reload', ["minifyJS",'minifySCSS','minifyHTML','compileSCSS'], function () {
 	gulp.src('./dist/myorder.html').pipe(connect.reload());
 });
 
 //创建一个默认执行的任务（在命令行窗口输入gulp就会执行这个任务）
-gulp.task('default',['compileSCSS'],function(){
-//gulp.task('default',["minifyJS",'minifySCSS','minifyHTML','compileSCSS'],function(){
+//gulp.task('default',['compileSCSS'],function(){
+gulp.task('default',["minifyJS",'minifySCSS','minifyHTML','compileSCSS'],function(){
 //	//开启服务器
-//	connect.server({
-//		livereload:true
-//	});
+	connect.server({
+		livereload:true
+	});
 
-	gulp.watch(['./src/scss/*.scss'],['reload']);
-//	gulp.watch(['./src/js/*.js','./src/scss/*.scss','./src/*.html','./src/scss/*.scss'],['reload']);
+//	gulp.watch(['./src/scss/*.scss'],['reload']);
+	gulp.watch(['./src/js/*.js','./src/scss/*.scss','./src/*.html','./src/scss/*.scss'],['reload']);
 });
